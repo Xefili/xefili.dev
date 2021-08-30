@@ -3,15 +3,16 @@ body {
     width: auto;
     max-height: 1080px;
     height: auto;
-    background-color: rgba(0, 204, 200, 0.3);
+    background-image: url(https://i.ibb.co/q1DWPhj/Color-Template.png);
+    background-size: cover;
 }
 #sitetitle {
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 5px;
     font-family: Roboto;
     font-weight: bold;
-    font-size: larger;
+    font-size: 3em;
     width: auto;
 }
 section {
@@ -27,4 +28,19 @@ section {
     margin-top: 1em;
     display: inline-block;
     font-family: Roboto;
+}
+a:visited {
+    color: black;
+}
+a:link {
+    color: black;
+}
+#discord_widget {
+    margin-top: 12.6em;
+    margin-left: 4px;
+}
+#welcome_msg {
+    font-family: Roboto;
+    font-weight: 700;
+    margin-top: 1em;
 }

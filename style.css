@@ -37,7 +37,7 @@ a:link {
 }
 #discord_widget {
     margin-top: 7em;
-    margin-left: 0.1em;
+    margin-left: 4px;
     z-index: 100;
 }
 #welcome_msg {

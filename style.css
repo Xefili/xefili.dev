@@ -36,9 +36,10 @@ a:link {
     color: black;
 }
 #discord_widget {
-    margin-top: 7em;
+    margin-top: 3.5em;
     margin-left: 4px;
-    z-index: 100;
+    z-index: -1;
+    display: inline-block;
 }
 #welcome_msg {
     font-family: Roboto;
@@ -74,4 +75,11 @@ a:link {
 #dcs {
     margin-top: 1em;
     display: inline-block;
+    font-family: Roboto;
+    font-weight: 700;
+}
+#doocs {
+    display: inline-block;
+    margin-top: 1em;
+    font-family: Roboto;
 }

@@ -38,7 +38,7 @@ a:link {
 #discord_widget {
     margin-top: 7em;
     margin-left: 4px;
-    z-index: 100;
+    z-index: -1;
 }
 #welcome_msg {
     font-family: Roboto;

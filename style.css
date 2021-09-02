@@ -75,8 +75,11 @@ a:link {
 #dcs {
     margin-top: 1em;
     display: inline-block;
+    font-family: Roboto;
+    font-weight: 700;
 }
 #doocs {
     display: inline-block;
     margin-top: 1em;
+    font-family: Roboto;
 }

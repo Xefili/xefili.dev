@@ -8,6 +8,7 @@ from discord.utils import get
 from dotenv import load_dotenv
 import lists
 #from keep_alive import keep_alive
+# use keep_alive module for hosting with replit.com -> keep_alive.py not icluded
 
 load_dotenv()
 TOKEN = os.getenv('token')

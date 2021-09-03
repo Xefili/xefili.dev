@@ -4,7 +4,6 @@
 
 + [Bucket Lounge Website](https://bucket-lounge-systems.tk)
 + [Bucket Lounge Discord](https://discord.gg/ZEPQCB68NZ "Discord")
-  
 + Bucket Helper
   + Bucket Helper Bot
   + [Replit.com](https://unimportantkindheartedquerylanguage.henryschutterle.repl.co/ "replit.com")

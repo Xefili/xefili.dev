@@ -13,21 +13,23 @@ body {
     font-family: Roboto;
     font-weight: bold;
     font-size: 3em;
-    width: auto;
+    width: 800px;
 }
-section {
-    height: auto;
-    width: auto;
+.grid {
+    display: grid;
+    place-items: center;
 }
 #Uptime {
     margin-top: 2em;
     display: inline-block;
     font-family: Roboto;
+    font-weight: 500;
 }
 #Discord {
     margin-top: 1em;
     display: inline-block;
     font-family: Roboto;
+    font-weight: 500;
 }
 a:visited {
     color: black;
@@ -36,10 +38,8 @@ a:link {
     color: black;
 }
 #discord_widget {
-    margin-top: 3.5em;
-    margin-left: 4px;
-    z-index: -1;
     display: inline-block;
+    margin-top: 4em;
 }
 #welcome_msg {
     font-family: Roboto;
@@ -50,6 +50,7 @@ a:link {
     font-family: Roboto;
     margin-top: 1em;
     display: inline-block;
+    font-weight: 500;
 }
 #uptmrobot {
     font-family: Roboto;
@@ -67,6 +68,7 @@ a:link {
     font-family: Roboto;
     margin-top: 1em;
     display: inline-block;
+    font-weight: 500;
 }
 #githb {
     font-family: Roboto;
@@ -80,6 +82,9 @@ a:link {
 }
 #doocs {
     display: inline-block;
-    margin-top: 1em;
     font-family: Roboto;
+    font-weight: 500;
+}
+#newbody {
+    margin-left: 30em;
 }

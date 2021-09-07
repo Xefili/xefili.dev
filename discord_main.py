@@ -33,6 +33,19 @@ async def hello(ctx):
 
 @client.command()
 @commands.has_permissions(send_messages=True)
+async def repeat(ctx, *, text):
+    if text=="i'm stupid":
+        await ctx.reply('Yeah we know.')
+    else:
+        await ctx.reply(f'{text}', mention_author=False)
+
+@repeat.error
+async def repeat_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send('You are missing one or more required arguments!')
+
+@client.command()
+@commands.has_permissions(send_messages=True)
 async def link_embedder(ctx, text, link):
     link_embedder_embed = discord.Embed(title='Link Embedder', color=0x008f8c)
     link_embedder_embed.add_field(name='Link', value=f'[{text}]({link})')

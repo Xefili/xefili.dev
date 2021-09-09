@@ -1,7 +1,5 @@
 body {
-    max-width: 40em;
     width: auto;
-    max-height: 22.5em;
     height: auto;
     background-image: url(https://i.ibb.co/q1DWPhj/Color-Template.png);
     background-size: cover;
@@ -13,11 +11,16 @@ body {
     font-family: Roboto;
     font-weight: bold;
     font-size: 3em;
-    width: 800px;
+    width: 25em;
+}
+.gridcenter {
+    display: grid;
+    place-items: left;
 }
 .grid {
     display: grid;
     place-items: center;
+    margin-right: 40em;
 }
 #Uptime {
     margin-top: 2em;

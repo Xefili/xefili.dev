@@ -1,0 +1,93 @@
+body {
+    width: auto;
+    height: auto;
+    background-image: url(https://i.ibb.co/q1DWPhj/Color-Template.png);
+    background-size: cover;
+}
+#sitetitle {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.1em;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 3em;
+    width: 25em;
+}
+.gridcenter {
+    display: grid;
+    place-items: left;
+}
+.grid {
+    display: grid;
+    place-items: center;
+    margin-right: 40em;
+}
+#Uptime {
+    margin-top: 2em;
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 500;
+}
+#Discord {
+    margin-top: 1em;
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 500;
+}
+a:visited {
+    color: black;
+}
+a:link {
+    color: black;
+}
+#discord_widget {
+    display: inline-block;
+    margin-top: 4em;
+}
+#welcome_msg {
+    font-family: Roboto;
+    font-weight: 700;
+    margin-top: 1em;
+}
+#Replit {
+    font-family: Roboto;
+    margin-top: 1em;
+    display: inline-block;
+    font-weight: 500;
+}
+#uptmrobot {
+    font-family: Roboto;
+    font-weight: 700;
+}
+#dscrd {
+    font-family: Roboto;
+    font-weight: 700;
+}
+#replt {
+    font-family: Roboto;
+    font-weight: 700;
+}
+#Github {
+    font-family: Roboto;
+    margin-top: 1em;
+    display: inline-block;
+    font-weight: 500;
+}
+#githb {
+    font-family: Roboto;
+    font-weight: 700;
+}
+#dcs {
+    margin-top: 1em;
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 700;
+}
+#doocs {
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 500;
+}
+#newbody {
+    margin-left: 30em;
+}

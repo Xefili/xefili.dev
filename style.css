@@ -1,7 +1,7 @@
 body {
     width: auto;
     height: auto;
-    background-image: url(https://i.ibb.co/q1DWPhj/Color-Template.png);
+    background-image: url(https://i.ibb.co/N9vr0RB/Color-Template.webp);
     background-size: cover;
 }
 #sitetitle {
@@ -10,17 +10,17 @@ body {
     text-decoration-thickness: 0.1em;
     font-family: Roboto;
     font-weight: bold;
-    font-size: 3em;
-    width: 25em;
-}
-.gridcenter {
-    display: grid;
-    place-items: left;
+    font-size: 2.6em;
+    width: inherit;
+    height: auto;
+    align-self: right;  
 }
 .grid {
     display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
     place-items: center;
-    margin-right: 40em;
+    margin-top: 10px;
 }
 #Uptime {
     margin-top: 2em;
@@ -41,19 +41,20 @@ a:link {
     color: black;
 }
 #discord_widget {
-    display: inline-block;
+    display: block;
     margin-top: 4em;
 }
 #welcome_msg {
     font-family: Roboto;
     font-weight: 700;
     margin-top: 1em;
+    word-wrap: normal;
 }
 #Replit {
     font-family: Roboto;
     margin-top: 1em;
-    display: inline-block;
     font-weight: 500;
+    display: inline-block;
 }
 #uptmrobot {
     font-family: Roboto;
@@ -87,7 +88,4 @@ a:link {
     display: inline-block;
     font-family: Roboto;
     font-weight: 500;
-}
-#newbody {
-    margin-left: 30em;
 }

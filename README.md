@@ -2,7 +2,7 @@
 
 ## All current projects
 
-+ [Bucket Lounge Website](https://bucket-lounge-systems.tk)
++ [Bucket Lounge Website](https://bucketlounge.tk)
 + [Bucket Lounge Discord](https://discord.gg/ZEPQCB68NZ "Discord")
 + Bucket Helper
   + Bucket Helper Bot

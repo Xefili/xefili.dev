@@ -1,91 +1,95 @@
 body {
     width: auto;
     height: auto;
-    background-image: url(https://i.ibb.co/N9vr0RB/Color-Template.webp);
-    background-size: cover;
+    background-color: #464646;
 }
 #sitetitle {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 0.1em;
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: bold;
-    font-size: 2.6em;
-    width: inherit;
-    height: auto;
-    align-self: right;  
+    font-size: 3em;
+    padding: 3%;
+    padding-bottom: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+    background: #ffffff;
+    overflow: clip;
+    color: black;
 }
 .grid {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
     place-items: center;
-    margin-top: 10px;
+    color: white;
 }
 #Uptime {
     margin-top: 2em;
     display: inline-block;
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 500;
 }
 #Discord {
     margin-top: 1em;
     display: inline-block;
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 500;
 }
 a:visited {
-    color: black;
+    color: white;
 }
 a:link {
-    color: black;
+    color: white;
 }
 #discord_widget {
     display: block;
     margin-top: 4em;
 }
 #welcome_msg {
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 700;
     margin-top: 1em;
     word-wrap: normal;
 }
 #Replit {
-    font-family: Roboto;
+    font-family: Helvetica;
     margin-top: 1em;
     font-weight: 500;
     display: inline-block;
 }
 #uptmrobot {
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 700;
 }
 #dscrd {
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 700;
 }
 #replt {
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 700;
 }
 #Github {
-    font-family: Roboto;
+    font-family: Helvetica;
     margin-top: 1em;
     display: inline-block;
     font-weight: 500;
 }
 #githb {
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 700;
 }
 #dcs {
     margin-top: 1em;
     display: inline-block;
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 700;
 }
 #doocs {
     display: inline-block;
-    font-family: Roboto;
+    font-family: Helvetica;
     font-weight: 500;
+    
 }

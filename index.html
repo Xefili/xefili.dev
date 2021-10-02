@@ -8,6 +8,7 @@
     <meta name="description" content="Bucket Lounge - Official Site">
     <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="mobile-stylesheet.css" />
     <link rel="shortcut icon" href="favicons/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="favicons/favicon-192.png">
@@ -36,16 +37,91 @@
 </body>
 <body id="newbody">
     <div>
-        <div>
-            <sttitle id="sitetitle" class="grid">Welcome to Bucket Lounge!</sttitle>
-        </div>
+      <div>
+          <sttitle id="sitetitle" class="grid">Welcome to Bucket Lounge!</sttitle>
+      </div>
     </div>
-        <div style="overflow: clip;", class="waves">
+      <div class="waves" style="margin-left: -0.02%;">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 1920 120"
+          xmlns="http://www.w3.org/2000/svg"
+
+        >
+          <path
+          d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+          opacity=".25"
+        />
+          <path
+            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+            opacity=".5"
+          />
+          <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+        </svg>
+      </div>
+      <div class="grid">
+        <welcome_msg id="welcome_msg"><br><br>You can find all the links to our socials and Services such as Bucket Helper</welcome_msg>
+      </div>
+        <div class="grid">
+          <div>
+              <uptmrobot id="uptmrobot">Current Bot Status: <a id="Uptime", href="https://stats.uptimerobot.com/9A3yqHmG0O", type="submit">Uptime Robot</a></uptmrobot>
+          </div>
+          <div>
+              <dscrd id="dscrd">The Disocrd Server: <a id="Discord", href="https://discord.gg/ZEPQCB68NZ", type="submit">Discord Server</a></dscrd>
+          </div>
+          <div>
+              <replt id="replt">Replit Page: <a id="Replit", href="https://unimportantkindheartedquerylanguage.henryschutterle.repl.co/", type="submit">Replit</a></replt>
+          </div>
+          <div>
+              <githb id="githb">Github Repository: <a id="Github" href="https://github.com/Xefili/bucket-lounge" type="submit">Github</a></githb>
+          </div>
+          <div>
+              <docs id="dcs">Bucket Helper Docs: <a id="doocs" href="https://bucketlounge.tk/docs.html">Docs</a></docs>
+          </div>
+            <div class="wavesupside" style="margin-top: 2%">
+              <svg
+                preserveAspectRatio="none"
+                viewBox="0 0 1920 120"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25"
+              />
+                <path
+                  d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                  opacity=".5"
+                />
+                <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+              </svg>
+            </div>
+            <div class="waves" style="margin-top: -0.5%;">
+              <svg
+                preserveAspectRatio="none"
+                viewBox="0 0 1920 120"
+                xmlns="http://www.w3.org/2000/svg"
+                
+              >
+                <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25"
+              />
+                <path
+                  d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                  opacity=".5"
+                />
+                <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+              </svg>
+            </div>
+          <div>
+            <p id=big-dc class="grid">Discord</p>
+            <iframe class="grid" title="Widget" id="discord_widget", src="https://discord.com/widget?id=730737501244751872&theme=dark" width="320" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="border: 3px solid white; border-radius: 5%;">Discord Widget</iframe>
+          </div>
+          <div class="wavesupside" style="margin-top: 2%">
             <svg
               preserveAspectRatio="none"
               viewBox="0 0 1920 120"
               xmlns="http://www.w3.org/2000/svg"
-              style="fill: #ffffff; width: 160%; height: 145px;"
             >
               <path
               d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
@@ -57,84 +133,7 @@
               />
               <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
             </svg>
-        </div>
-        <div style="align-content: inherit;" class="grid">
-            <div>
-                <welcome_msg id="welcome_msg">You can find all the links to our socials and Services such as Bucket Helper</welcome_msg>
-            </div>
-            <div>
-                <uptmrobot id="uptmrobot">Current Bot Status: <a id="Uptime", href="https://stats.uptimerobot.com/9A3yqHmG0O", type="submit">Uptime Robot</a></uptmrobot>
-            </div>
-            <div>
-                <dscrd id="dscrd">The Disocrd Server: <a id="Discord", href="https://discord.gg/ZEPQCB68NZ", type="submit">Discord Server</a></dscrd>
-            </div>
-            <div>
-                <replt id="replt">Replit Page: <a id="Replit", href="https://unimportantkindheartedquerylanguage.henryschutterle.repl.co/", type="submit">Replit</a></replt>
-            </div>
-            <div>
-                <githb id="githb">Github Repository: <a id="Github" href="https://github.com/Xefili/bucket-lounge" type="submit">Github</a></githb>
-            </div>
-            <div>
-                <docs id="dcs">Bucket Helper Docs: <a id="doocs" href="https://bucketlounge.tk/docs.html">Docs</a></docs>
-            </div>
-            <div style="overflow: clip;", class="waves">
-              <svg
-                preserveAspectRatio="none"
-                viewBox="0 0 1920 120"
-                xmlns="http://www.w3.org/2000/svg"
-                style="fill: #ffffff; width: 160%; height: 145px; transform: rotate(180deg); margin-left: -60%"
-              >
-                <path
-                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-                opacity=".25"
-              />
-                <path
-                  d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-                  opacity=".5"
-                />
-                <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
-              </svg>
-          <!-- </div>
-            <div style="overflow: clip;", class="waves"> -->
-              <svg
-                preserveAspectRatio="none"
-                viewBox="0 0 1920 120"
-                xmlns="http://www.w3.org/2000/svg"
-                style="fill: #ffffff; width: 160%; height: 145px; margin-top: -0.5%"
-              >
-                <path
-                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-                opacity=".25"
-              />
-                <path
-                  d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-                  opacity=".5"
-                />
-                <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
-              </svg>
           </div>
-            <div>
-              <p id="welcome_msg" class="grid" style="color: white; font-size:2.5em; font-family: Helvetica; text-decoration-style: solid; text-decoration-line: underline;">Discord</p>
-                <iframe title="Widget" id="discord_widget", src="https://discord.com/widget?id=730737501244751872&theme=dark" width="320" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="border: 3px solid white; border-radius: 5%;">Discord Widget</iframe>
-            </div>
-            <div style="overflow: clip;" class="waves">
-              <svg
-                preserveAspectRatio="none"
-                viewBox="0 0 1920 120"
-                xmlns="http://www.w3.org/2000/svg"
-                style="fill: #ffffff; width: 160%; height: 145px; transform: rotate(180deg); margin-left: -60%"
-              >
-                <path
-                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-                opacity=".25"
-              />
-                <path
-                  d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-                  opacity=".5"
-                />
-                <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
-              </svg>
-            </div>
         </div>
     </div>
 </body>

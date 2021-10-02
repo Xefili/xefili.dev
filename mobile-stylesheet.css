@@ -3,6 +3,10 @@ body {
     height: auto;
     background-color: #464646;
     overflow-x: hidden;
+    position: relative;
+}
+html {
+    overflow-x: hidden;
 }
 #sitetitle {
     text-decoration-line: underline;
@@ -18,21 +22,23 @@ body {
     background: #ffffff;
     overflow: clip;
     color: black;
+    text-align: center;
+    margin-left: -8%;
 }
 .waves {
     fill: #ffffff;
-    width: 160%;
-    height: 145px;
-    overflow: visible;
+    width: 300%;
+    height: 80px;
+    overflow: clip;
     margin-left: 60%;
 }
 .wavesupside {
     fill: #ffffff;
-    width: 160%;
+    width: 300%;
     height: 145px;
     margin-left: -60%;
     transform: rotate(180deg);
-    overflow: visible;
+    overflow: clip;
 }
 .grid {
     display: grid;
@@ -67,7 +73,7 @@ a:link {
     font-family: Helvetica;
     font-weight: 700;
     margin-top: 1em;
-    word-wrap: normal;
+    text-align: center;
 }
 #Replit {
     font-family: Helvetica;

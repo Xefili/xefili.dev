@@ -1,14 +1,14 @@
 body {
     width: 100%;
     height: auto;
-    background-color: #464646;
+    background-color: #0e1e38;
     overflow-x: hidden;
 }
 #sitetitle {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 0.1em;
-    font-family: Helvetica;
+    font-family: "Fira Code";
     font-weight: bold;
     font-size: 3em;
     padding: 3%;
@@ -18,6 +18,7 @@ body {
     background: #ffffff;
     overflow: clip;
     color: black;
+    text-align: center
 }
 .waves {
     fill: #ffffff;
@@ -44,13 +45,13 @@ body {
 #Uptime {
     margin-top: 2em;
     display: inline-block;
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 500;
 }
 #Discord {
     margin-top: 1em;
     display: inline-block;
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 500;
 }
 a:visited {
@@ -64,53 +65,53 @@ a:link {
     margin-top: 4em;
 }
 #welcome_msg {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 700;
     margin-top: 1em;
     word-wrap: normal;
 }
 #Replit {
-    font-family: Helvetica;
+    font-family: Montserrat;
     margin-top: 1em;
     font-weight: 500;
     display: inline-block;
 }
 #uptmrobot {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 700;
 }
 #dscrd {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 700;
 }
 #replt {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 700;
 }
 #Github {
-    font-family: Helvetica;
+    font-family: Montserrat;
     margin-top: 1em;
     display: inline-block;
     font-weight: 500;
 }
 #githb {
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 700;
 }
 #dcs {
     margin-top: 1em;
     display: inline-block;
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 700;
 }
 #doocs {
     display: inline-block;
-    font-family: Helvetica;
+    font-family: Montserrat;
     font-weight: 500;
     
 }
 #big-dc {
-    font-family: Helvetica;
+    font-family: "Fira Code";
     font-weight: bold;
     font-size: 2em;
     text-decoration: underline;

@@ -1,7 +1,7 @@
 body {
     width: 100%;
-    height: auto;
-    background-color: #464646;
+    height: 100%;
+    background-color: white;
     overflow-x: hidden;
 }
 #sitetitle {
@@ -12,22 +12,23 @@ body {
     font-weight: bold;
     font-size: 3em;
     padding: 3%;
-    padding-bottom: 3.5%;
+    padding-bottom: 3%;
     padding-left: 30%;
     padding-right: 30%;
-    background: #ffffff;
+    background: #464646;
     overflow: clip;
-    color: black;
+    color: white;
+    text-align: center;
 }
 .waves {
-    fill: #ffffff;
+    fill: #464646;
     width: 160%;
     height: 145px;
     overflow: visible;
     margin-left: 60%;
 }
 .wavesupside {
-    fill: #ffffff;
+    fill: #464646;
     width: 160%;
     height: 145px;
     margin-left: -60%;
@@ -39,7 +40,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     place-items: center;
-    color: white;
+    color: black;
 }
 #Uptime {
     margin-top: 2em;
@@ -54,10 +55,10 @@ body {
     font-weight: 500;
 }
 a:visited {
-    color: white;
+    color: black;
 }
 a:link {
-    color: white;
+    color: black;
 }
 #discord_widget {
     display: inline-block;
@@ -116,5 +117,5 @@ a:link {
     text-decoration: underline;
 }
 #lastwave {
-    margin-top: 2%;
+    display: hidden;
 }

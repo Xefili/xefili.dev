@@ -49,6 +49,7 @@ html {
     display: inline-block;
     font-family: Ubuntu;
     font-weight: 500;
+    font-size: 1em;
 }
 #Discord {
     margin-top: 1em;
@@ -69,26 +70,31 @@ a:link {
 #welcome_msg {
     font-family: Ubuntu;
     font-weight: 700;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
     text-align: center;
 }
 #Replit {
     font-family: Ubuntu;
     margin-top: 1em;
     font-weight: 500;
+    font-size: 1em;
     display: inline-block;
 }
 #uptmrobot {
     font-family: Ubuntu;
     font-weight: 700;
+    font-size: 1.25em
 }
 #dscrd {
     font-family: Ubuntu;
     font-weight: 700;
+    font-size: 1.25em
 }
 #replt {
     font-family: Ubuntu;
     font-weight: 700;
+    font-size: 1.25em
 }
 #Github {
     font-family: Ubuntu;
@@ -99,12 +105,14 @@ a:link {
 #githb {
     font-family: Ubuntu;
     font-weight: 700;
+    font-size: 1.25em
 }
 #dcs {
     margin-top: 1em;
     display: inline-block;
     font-family: Ubuntu;
     font-weight: 700;
+    font-size: 1.25em
 }
 #doocs {
     display: inline-block;
@@ -113,9 +121,9 @@ a:link {
     
 }
 #big-dc {
-    font-family: "Ubuntu";
+    font-family: Ubuntu;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 3em;
 }
 #lastwave {
     margin-top: 2%;

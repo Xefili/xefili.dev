@@ -1,39 +1,36 @@
 body {
     width: 100%;
     height: auto;
-    background-color: #0e1e38;
-    overflow-x: hidden;
-    position: relative;
+    background-image: url('https://i.ibb.co/SRWL57K/Color-Template-2.webp');/*#0e1e38*/
+    background-size: cover;
 }
 html {
     overflow-x: hidden;
 }
 #sitetitle {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
     text-decoration-thickness: 0.1em;
-    font-family:"Fira Code";
-    font-weight: bold;
-    font-size: 3em;
+    font-family:"Ubuntu";
+    font-weight: 700;
+    font-size: 4em;
     padding: 3%;
     padding-bottom: 3%;
     padding-left: 30%;
     padding-right: 30%;
-    background: #ffffff;
+    background: #A40058;
     overflow: clip;
-    color: black;
+    color: white;
     text-align: center;
     margin-left: -8%;
 }
 .waves {
-    fill: #ffffff;
+    fill: #A40058;
     width: 300%;
     height: 80px;
     overflow: clip;
     margin-left: 60%;
 }
 .wavesupside {
-    fill: #ffffff;
+    fill: #A40058;
     width: 300%;
     height: 145px;
     margin-left: -60%;
@@ -50,13 +47,13 @@ html {
 #Uptime {
     margin-top: 2em;
     display: inline-block;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
 }
 #Discord {
     margin-top: 1em;
     display: inline-block;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
 }
 a:visited {
@@ -70,56 +67,55 @@ a:link {
     margin-top: 4em;
 }
 #welcome_msg {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 700;
     margin-top: 1em;
     text-align: center;
 }
 #Replit {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     margin-top: 1em;
     font-weight: 500;
     display: inline-block;
 }
 #uptmrobot {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 700;
 }
 #dscrd {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 700;
 }
 #replt {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 700;
 }
 #Github {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     margin-top: 1em;
     display: inline-block;
     font-weight: 500;
 }
 #githb {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 700;
 }
 #dcs {
     margin-top: 1em;
     display: inline-block;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 700;
 }
 #doocs {
     display: inline-block;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     
 }
 #big-dc {
-    font-family: "Fira Code";
-    font-weight: bold;
+    font-family: "Ubuntu";
+    font-weight: 700;
     font-size: 2em;
-    text-decoration: underline;
 }
 #lastwave {
     margin-top: 2%;

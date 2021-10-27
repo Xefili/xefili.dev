@@ -17,9 +17,9 @@ body {
     padding-left: 30%;
     padding-right: 30%;
     background: #A40058;
+    color: #000000;
     overflow: clip;
-    color: white;
-    text-align: center
+    text-align: center;
 }
 .waves {
     fill: #A40058;
@@ -41,7 +41,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     place-items: center;
-    color: white;
+    color: #000000;
 }
 #Uptime {
     margin-top: 2em;
@@ -56,10 +56,10 @@ body {
     font-weight: 500;
 }
 a:visited {
-    color: white;
+    color: #000000;
 }
 a:link {
-    color: white;
+    color: #000000;
 }
 #discord_widget {
     display: inline-block;

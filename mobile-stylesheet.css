@@ -44,19 +44,6 @@ html {
     place-items: center;
     color: white;
 }
-#Uptime {
-    margin-top: 2em;
-    display: inline-block;
-    font-family: Ubuntu;
-    font-weight: 500;
-    font-size: 1em;
-}
-#Discord {
-    margin-top: 1em;
-    display: inline-block;
-    font-family: Ubuntu;
-    font-weight: 500;
-}
 a:visited {
     color: white;
 }
@@ -67,64 +54,31 @@ a:link {
     display: inline-block;
     margin-top: 4em;
 }
-#welcome_msg {
+#welcome_message {
     font-family: Ubuntu;
     font-weight: 700;
     margin-top: 0.5em;
     margin-bottom: 1em;
     text-align: center;
 }
-#Replit {
-    font-family: Ubuntu;
-    margin-top: 1em;
-    font-weight: 500;
-    font-size: 1em;
-    display: inline-block;
-}
-#uptmrobot {
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 1.25em
-}
-#dscrd {
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 1.25em
-}
-#replt {
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 1.25em
-}
-#Github {
-    font-family: Ubuntu;
-    margin-top: 1em;
-    display: inline-block;
-    font-weight: 500;
-}
-#githb {
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 1.25em
-}
-#dcs {
-    margin-top: 1em;
-    display: inline-block;
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 1.25em
-}
-#doocs {
-    display: inline-block;
-    font-family: Ubuntu;
-    font-weight: 500;
-    
-}
-#big-dc {
+
+#big_Discord {
     font-family: Ubuntu;
     font-weight: 700;
     font-size: 3em;
 }
 #lastwave {
     margin-top: 2%;
+}
+.mediumtext {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-top: 1em;
+    display: inline-block;
+}
+.mediumlink {
+    display: inline-block;
+    font-family: Ubuntu;
+    font-weight: 500;
 }

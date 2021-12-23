@@ -59,6 +59,7 @@ a:link {
     font-size: 1.5em;
     margin-top: 1em;
     word-wrap: normal;
+    text-align: center;
 }
 #big_Discord {
     font-family: "Ubuntu";

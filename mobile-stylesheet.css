@@ -31,7 +31,7 @@ html {
 }
 .wavesupside {
     fill: #A40058;
-    width: 300%;
+    /* width: 300%; */
     height: 145px;
     margin-left: -60%;
     transform: rotate(180deg);
@@ -81,4 +81,7 @@ a:link {
     display: inline-block;
     font-family: Ubuntu;
     font-weight: 500;
+}
+#mobile-wavefix {
+    margin-left: 40%;
 }

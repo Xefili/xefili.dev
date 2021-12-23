@@ -77,6 +77,13 @@ a:link {
     font-size: 1.5em;
     margin-top: 1em;
 }
+.smalltext {
+    display: inline-block;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
 .mediumlink {
     display: inline-block;
     font-family: "Ubuntu";

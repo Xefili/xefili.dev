@@ -1,0 +1,20 @@
+<svg width="71" height="30" viewBox="0 0 71 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_3)">
+<rect x="1" y="1" width="69" height="29" rx="14.5" fill="url(#paint0_linear_1_3)"/>
+<path d="M16 29C7.71573 29 1 23.2843 1 15C1 6.71573 7.71573 1 16 1" stroke="black" stroke-width="2"/>
+<path d="M55 29C63.2843 29 70 22.732 70 15C70 7.26801 63.2843 1 55 1" stroke="black" stroke-width="2"/>
+<line x1="16" y1="1" x2="55" y2="1" stroke="black" stroke-width="2"/>
+<line x1="16" y1="29" x2="55" y2="29" stroke="black" stroke-width="2"/>
+<path d="M15 22.5C12.9167 22.5 11.1458 21.7708 9.6875 20.3125C8.22917 18.8542 7.5 17.0833 7.5 15C7.5 12.9167 8.22917 11.1458 9.6875 9.6875C11.1458 8.22917 12.9167 7.5 15 7.5C15.1111 7.5 15.2292 7.50347 15.3542 7.51042C15.4792 7.51736 15.6389 7.52778 15.8333 7.54167C15.3333 7.98611 14.9444 8.53472 14.6667 9.1875C14.3889 9.84028 14.25 10.5278 14.25 11.25C14.25 12.5 14.6875 13.5625 15.5625 14.4375C16.4375 15.3125 17.5 15.75 18.75 15.75C19.4722 15.75 20.1597 15.6215 20.8125 15.3646C21.4653 15.1076 22.0139 14.75 22.4583 14.2917C22.4722 14.4583 22.4826 14.5938 22.4896 14.6979C22.4965 14.8021 22.5 14.9028 22.5 15C22.5 17.0833 21.7708 18.8542 20.3125 20.3125C18.8542 21.7708 17.0833 22.5 15 22.5Z" fill="black"/>
+<circle cx="55" cy="15" r="9" fill="#D9D9D9" stroke="black" stroke-width="2"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_3" x1="48.5" y1="-14.5" x2="25.5" y2="40" gradientUnits="userSpaceOnUse">
+<stop offset="0.233278" stop-color="white"/>
+<stop offset="1" stop-color="#0019FF"/>
+</linearGradient>
+<clipPath id="clip0_1_3">
+<rect width="71" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

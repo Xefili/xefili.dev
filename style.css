@@ -1,91 +1,166 @@
+:root {
+    font-family: "Roboto Flex", system-ui, -apple-system, sans-serif;
+}
+@keyframes pageLoad {
+    0% {
+        opacity: 0;
+        background-color: #2c2c2c;
+    }
+    100% {
+        opacity: 100;
+        background-color: white;
+    }
+}
+html {
+    animation: pageLoad 0.5s;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: flex;
+}
+.g {
+    display: inline-flex;
+}
 body {
     width: 100%;
+    margin: 0;
     height: auto;
-    background-image: url('https://i.ibb.co/SRWL57K/Color-Template-2.webp');/*#0e1e38*/
-    background-size: cover;
-    overflow-x: hidden;
 }
-#sitetitle {
-    /* text-decoration-line: underline;
-    text-decoration-style: solid; */
-    text-decoration-thickness: 0.1em;
-    font-family: "Ubuntu";
+notice {
+    position: fixed;
+    background-color: #30aec4a9;
+    font-family: "Poppins", system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    > button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+pageHead {
+    margin-top: 2rem;
+    position: fixed;
+    font-family: "Poppins", system-ui, sans-serif;
+    display: block;
     font-weight: 700;
-    font-size: 4em;
-    padding: 3%;
-    padding-bottom: 3.5%;
-    padding-left: 30%;
-    padding-right: 30%;
-    background: #A40058;
-    overflow: clip;
-    color: white;
-    text-align: center
+    height: 3rem;
+    width: 100%;
+    background: #30aec4a9;
+    backdrop-filter: blur(5px);
+    z-index: 2;
 }
-.waves {
-    fill: #A40058;
-    width: 160%;
-    height: 145px;
-    overflow: visible;
-    margin-left: 60%;
+leftDivision {
+    width: 15%;
+    height: 3rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.wavesupside {
-    fill: #A40058;
-    width: 160%;
-    height: 145px;
-    margin-left: -60%;
-    transform: rotate(180deg);
-    overflow: visible;
+logo {
+    height: 2rem;
+    width: 2rem;
 }
-.grid {
+#logo {
+    height: 2rem;
+    width: 2rem;
+}
+navbar {
+    display: flex;
+    float: right;
+    height: 3rem;
+    width: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+tools, docs, home, blog {
+    display: flex;
+    align-items: center;
+}
+a {
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+}
+pageContent {
+    display: block;
+    position: absolute;
+    margin-top: calc(3rem + 2px);
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+h1, h2, h3 {
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: 1000;
+    text-decoration: underline;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+#lightswitch, #darkswitch {
+    height: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+#bulb {
+    width: 2rem;
+    height: 2rem;
+}
+.mobileOnly {
+    display: none;
+}
+.desktopOnly {
+    display: contents;
+}
+cSpacer {
+    display: inline-block;
+    height: 6rem;
+    width: 100%;
+}
+gridDivision {
+    font-size: 1rem;
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    place-items: center;
-    color: white;
+    justify-items: center;
+    align-items: center;
+    height: 24rem;
+    margin-left: 20em;
+    margin-right: 20rem;
+    column-gap: 1rem;
 }
-a:visited {
-    color: white;
+imageDivision {
+    display: grid;
+    grid-column: 1;
 }
-a:link {
-    color: white;
+#blogImage {
+    aspect-ratio: initial;
+    scale: 2;
 }
-#discord_widget {
-    display: inline-block;
-    margin-top: 4em;
+textDivision {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    width: 32rem;
 }
-#welcome_message {
-    font-family: Ubuntu;
+#divisionButton {
+    padding: 1rem;
+    background-color: #3cbe61;
+    border-radius: 25px;
+    border: none;
+    width: 10rem;
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
     font-weight: 700;
-    font-size: 1.5em;
-    margin-top: 1em;
-    word-wrap: normal;
-    text-align: center;
-}
-#big_Discord {
-    font-family: "Ubuntu";
-    font-weight: 700;
-    font-size: 3em;
-    margin-bottom: -0.5em;
-}
-#lastwave {
-    margin-top: 2%;
-}
-.mediumtext {
-    display: inline-block;
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-top: 1em;
-}
-.smalltext {
-    display: inline-block;
-    font-family: "Ubuntu";
-    font-weight: 700;
-    font-size: 1em;
-    margin-top: 0.5em;
-}
-.mediumlink {
-    display: inline-block;
-    font-family: "Ubuntu";
-    font-weight: 500;
+    font-family: "Poppins", system-ui, sans-serif;
+    cursor: pointer;
 }

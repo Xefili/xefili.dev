@@ -36,6 +36,7 @@ notice {
     justify-content: center;
     align-items: center;
     height: 2rem;
+    width: 100%;
     > button {
         border: none;
         background: none;

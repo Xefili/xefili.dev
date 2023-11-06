@@ -15,50 +15,41 @@
     <title>Home - Bucket Lounge</title>
 </head>
 <body>
-    <notice class="show" id="notice">This page uses cookies to provide functionality and to improve performance. By using the site, you accept the use of cookies.<a style="text-decoration: underline;" href="/privacypolicy">Privacy Policy</a><button onclick="hideElement()"><img src="assets/close.svg"/></button></notice>
     <pageHead id="pageHead">
         <leftDivision>
-            <logo><img id="logo" src="/assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
+            <logo><img id="logo" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
             <logoText>
-                <span>Bucket Lounge</span>
+                <span>Xefili.dev</span>
             </logoText>
         </leftDivision>
         <navBar>
             <a href="index.html">
-                <home id="home">Home<span class="material-symbols-outlined">home</span></home>
+                <home id="home">Home <span class="material-symbols-outlined">home</span></home>
             </a>
             <a href="blog.html">
-                <blog id="blog">Blog<span class="material-symbols-outlined">chat</span></Blog>
+                <blog id="blog">Blog <span class="material-symbols-outlined">chat</span></Blog>
             </a>
             <a href="https://docs.bucketlounge.tk">
-                <docs id="docs">Documentation<span class="material-symbols-outlined">description</span></Docs>
+                <docs id="docs">Documentation <span class="material-symbols-outlined">description</span></Docs>
             </a>
             <a href="tools.html">
-                <tools id="tools">Tools<span class="material-symbols-outlined">construction</span></search>
+                <tools id="tools">Tools <span class="material-symbols-outlined">construction</span></search>
             </a>
-            <lightswitch>
-                <button class="g" id="lightswitch" onclick="hideLB()">
-                    <span class="material-symbols-outlined">dark_mode</span>
-                </button>
-                <button class="hide" id="darkswitch" onclick="hideDB()">
-                    <span style="color: white" class="material-symbols-outlined">light_mode</span>
-                </button>
-            </lightswitch>
         </navBar>
     </pageHead>
-    <!-- Please do not put site content in the <body> tags! Always put site content in <content> tags.-->
+    <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
     <pageContent>
-        <h1>Welcome to Bucket Lounge!</h1>
+        <h1 style="text-align: center;">Glad you made it 👋<br>Welcome to Xefili.dev!</h1>
         <gridDivision>
             <textTitle class="mobileOnly">
-                <h2>Find out what's new on Bucket Lounge</h2>
+                <h2>Find out what's new on Xefili.dev</h2>
             </textTitle>
             <imageDivision>
                 <img id="blogImage" src="assets/blog.svg" alt="Blog Image"/>
             </imageDivision>
             <textDivision>
-                <h2 class="desktopOnly">Find out what's new<br>on Bucket Lounge</h2>
-                <span>Take a look at what's happening right now on Bucket Lounge!</span>
+                <h2 class="desktopOnly">Find out what's new<br>on Xefili.dev</h2>
+                <span>Take a look at what's happening right now on Xefili.dev!</span>
             </textDivision>
                 <button type="submit" onclick="window.location.href='/blog.html'" id="divisionButton">To Blog</button>
         </gridDivision>

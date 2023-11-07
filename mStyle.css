@@ -12,12 +12,7 @@ body {
     margin: 0;
     height: auto;
 }
-notice {
-    height: 3rem;
-    font-size: x-small;
-}
 pageHead {
-    margin-top: 3rem;
     position: fixed;
     font-family: "Poppins";
     display: block;
@@ -48,7 +43,7 @@ h1 {
 }
 h2 {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 logoText {
     margin-left: 1rem;

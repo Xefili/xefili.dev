@@ -1,17 +1,46 @@
-pageContent {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+h2 {
+    text-decoration: none;
+    font-size: 2rem;
 }
 articles {
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    gap: 4rem;
+    justify-content: left;
 }
-art1, art2, art3, art4 {
-    width: 40%;
-    background: #345174;
-    margin: 1rem;
-    height: 32rem;
+
+art1 {
+    grid-area: 1 / 1 / 2 / 3;
+    border: 2px solid white;
+}
+
+art2 {
+    grid-area: 1 / 3 / 2 / 4;
+    border: 2px solid white;
+}
+
+art3 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 2px solid white;
+}
+
+art4 {
+    grid-area: 2 / 2 / 3 / 4;
+    border: 2px solid white;
+}
+.view {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    justify-self: center;
+    height: 72rem;
+    width: 80%;
+    background: #eeeeee;
+    color: #000000;
+    border-radius: 25px;
 }

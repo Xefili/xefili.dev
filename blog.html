@@ -36,36 +36,44 @@
             </a>
         </navBar>
     </pageHead>
-    <pageContent>
+    <pageContent ondblclick="ret()">
         <h1>Welcome to the blog!</h1>
         <h2>recent articles</h2>
         <articles>
-            <art1 id="art1" onclick=enlarge(art1)>
+            <art class="article-sec" id="art1" onclick="enlarge('art1')">
                 <h3>Lorem ipsum</h3>
                 <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-            </art1>
-            <art2 id="art2" onclick=enlarge(art2)>
+                <blrr></blrr>
+            </art>
+            <art class="article-sec" id="art2" onclick="enlarge('art2')">
                 <h3>Lorem Ipsum</h3>
                 <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-            </art2>
-            <art3 id="art3" onclick=enlarge(art3)>
+                <blrr></blrr>
+            </art>
+            <art class="article-sec" id="art3" onclick="enlarge('art3')">
                 <h3>Lorem Ipsum</h3>
                 <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-            </art3>
-            <art4 id="art4" onclick=enlarge(art4)>
+                <blrr></blrr>
+            </art>
+            <art class="article-sec" id="art4" onclick="enlarge('art4')">
                 <h3>Lorem Ipsum</h3>
-                <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-            </art4>
+                <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
+                <blrr></blrr>
+            </art>
         </articles>
     </pageContent>
+    <script src="script.js" type="module">
+    </script>
     <script>
         function enlarge(id) {
-    if(document.getElementById(id).className == "view") {
-        document.getElementById(id).className = ""
-    } else {
-        document.getElementById(id).className = "view"
-    }
-}
+            document.getElementById(id).classList.add("view")
+        }
+        function ret() {
+            var arts = document.getElementsByClassName("article-sec")
+            for(var i = 0; i < 4; i++) {
+                arts[i].classList.remove("view")
+            }
+        }
     </script>
 </body>
 </html>

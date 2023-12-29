@@ -1,0 +1,33 @@
+img {
+    height: 12rem;
+    justify-self: center;
+}
+.material-symbols-outlined {
+    display: grid;
+}
+carr {
+    display: grid;
+    grid-template-columns: 1fr 32rem 1fr;
+    align-items: center;
+    margin-top: 3rem;
+    >left {
+        display: grid;
+        justify-content: center;
+        grid-column: 1;
+    }
+    >div {
+        display: grid;
+        grid-column: 2;
+        overflow-y: scroll;
+        grid-template-rows: 1fr 1fr 1fr;
+        flex-direction: row;
+        >text>p {
+            text-align: center;
+        }
+    }
+    >right {
+        grid-column: 3;
+        display: grid;
+        justify-content: center;
+    }
+}

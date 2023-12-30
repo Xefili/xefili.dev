@@ -61,17 +61,18 @@
                 <blrr></blrr>
             </art>
         </articles>
+        <p>Looking for a different article? Visit the archive <a href="/blog/displayArticle.html">here</a></p>
     </pageContent>
     <script src="script.js" type="module">
     </script>
     <script>
         function enlarge(id) {
-            document.getElementById(id).classList.add("view")
+            document.getElementById(id).classList.toggle("view")
         }
         function ret() {
             var arts = document.getElementsByClassName("article-sec")
             for(var i = 0; i < 4; i++) {
-                arts[i].classList.remove("view")
+                arts[i].classList.toggle("view")
             }
         }
     </script>

@@ -1,0 +1,60 @@
+@import "../styles/globalVariables.css";
+search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#search-input {
+    margin-top: 3rem;
+    width: 24rem;
+    padding: 1.5rem;
+    height: 1rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.75);
+    border: none;
+    font-size: larger;
+}
+#search-ul {
+    list-style: none;
+    width: 100%;
+    display: grid;
+    padding: 0;
+    justify-content: center;
+}
+#search-ul > li {
+    width: 24rem;
+    height: 1rem;
+    padding: .5rem;
+    font-weight: 900;
+}
+flex {
+    display: flex;
+    justify-content: center;
+}
+#generator {
+    width: 80%;
+    display: grid;
+}
+box {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-top: 4rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    gap: 2rem;
+}
+box > h1 {
+    padding: 1rem;
+}
+@media(prefers-color-scheme:dark) {
+    #search-input {
+        background: var(--background-head-dark);
+        color: white;
+    }
+    #search-input::placeholder {
+        color: white;
+    }
+    #search-ul > li > a {
+        color: white;
+    }
+}

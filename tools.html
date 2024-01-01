@@ -39,38 +39,59 @@
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
     <pageContent>
         <carr>
-            <left class="material-symbols-outlined">arrow_back</left>
-            <div>
-                <img src="https://code.visualstudio.com/assets/images/code-stable.png">
-                <text>
-                    <h1>VS Code</h1>
-                    <p>VS Code is a versatile text editor and has Intellisense, aswell as code suggestions and highliting. 90% of development was done on VS Code and the Live Server Extension</p>
-                </text>
+            <div class="carousel-view">
+                <left id="prev-btn" class="material-symbols-outlined">arrow_back</left>
+                    <div id="item-list" class="item-list">
+                        <div id="item" class="item">
+                            <img src="assets/vscode.svg"/>
+                            <textbox>
+                                <h1>placeholder</h1>
+                                <text>sum placeholder text</text>
+                            </textbox>
+                        </div>
+                        <div id="item" class="item">
+                            <img src="assets/vscode.svg"/>
+                            <textbox>
+                                <h1>Visual Studio Code</h1>
+                                <text>sum placeholder text</text>
+                            </textbox>
+                        </div>
+                        <div id="item" class="item">
+                            <img src="assets/vscode.svg"/>
+                            <textbox>
+                                <h1>Visual Studio Code</h1>
+                                <text>sum placeholder text</text>
+                            </textbox>
+                        </div>
+                        <div id="item" class="item">
+                            <img src="assets/vscode.svg"/>
+                            <textbox>
+                                <h1>Visual Studio Code</h1>
+                                <text>sum placeholder text</text>
+                            </textbox>
+                        </div>
+                    </div>
+                <right id="next-btn" class="material-symbols-outlined">arrow_forward</right>
+                </div>
             </div>
-            <div>
-                <img src="https://code.visualstudio.com/assets/images/code-stable.png">
-                <text>
-                    <h1>VS Code</h1>
-                    <p>VS Code is a versatile text editor and has Intellisense, aswell as code suggestions and highliting. 90% of development was done on VS Code and the Live Server Extension</p>
-                </text>
-            </div>
-            <div>
-                <img src="https://code.visualstudio.com/assets/images/code-stable.png">
-                <text>
-                    <h1>VS Code</h1>
-                    <p>VS Code is a versatile text editor and has Intellisense, aswell as code suggestions and highliting. 90% of development was done on VS Code and the Live Server Extension</p>
-                </text>
-            </div>
-            <div>
-                <img src="https://code.visualstudio.com/assets/images/code-stable.png">
-                <text>
-                    <h1>VS Code</h1>
-                    <p>VS Code is a versatile text editor and has Intellisense, aswell as code suggestions and highliting. 90% of development was done on VS Code and the Live Server Extension</p>
-                </text>
-            </div>
-            <right class="material-symbols-outlined">arrow_forward</right>
         </carr>
     </pageContent>
 </body>
-<script src="script.js"></script>
+<script>
+const prev = document.getElementById('prev-btn')
+const next = document.getElementById('next-btn')
+const list = document.getElementById('item-list')
+
+function convertRemToPixels(rem) {    
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
+prev.addEventListener('click', () => {
+    list.scrollLeft -= convertRemToPixels(24)
+})
+
+next.addEventListener('click', () => {
+    list.scrollLeft += convertRemToPixels(24)
+})
+</script>
 </html>

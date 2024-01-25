@@ -58,3 +58,17 @@ art[class^="article-sec view"] {
     user-select: none;
     overflow: visible;
 }
+.hidden {
+    display: none;
+}
+action {
+    background: lightcoral;
+    color: black;
+    border-radius: 5px;
+    padding: .5rem;
+}
+#a {
+    color: inherit;
+    text-decoration: underline;
+    padding: .125rem;
+}

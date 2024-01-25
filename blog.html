@@ -61,7 +61,16 @@
                 <blrr></blrr>
             </art>
         </articles>
-        <p>Looking for a different article? Visit the archive <a href="/blog/displayArticle.html">here</a></p>
+        <p>Looking for a different article? Visit the archive <a id="a" href="/blog/displayArticle.html">here</a></p> <!-- this id is stupid but works :) -->
+        <action class="hidden" id="action">
+            <titleBar>
+                <t>Looks like we've hit a roadblock</t>
+                <close class="material-symbols-outlined" id="close">close</close>
+            </titleBar>
+            <content id="alertBox">
+                	<!-- This may be filled by the catch block of script.js -->
+            </content>
+        </action>
     </pageContent>
     <script src="script.js" type="module">
     </script>

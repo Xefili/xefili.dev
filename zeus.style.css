@@ -19,7 +19,7 @@ a {
 }
 .grad {
     font-size: 16em;
-    background: linear-gradient(lime, skyblue);
+    background: linear-gradient(to left bottom, #0055b1, #4d56c7, #8250d6, #b740dc, #eb12d9);;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -50,4 +50,35 @@ spacer {
     >h2 {
         color: #ff2020;
     }
+}
+#flights > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    gap: 1.5em;
+}
+#flights > div > row {
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: .1em;
+    >slot2 {
+        font-family: "Cascadia Code" monospace;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+sp {
+    width: 80%;
+    background: gray;
+    height: 1px;
+    justify-self: center;
+}
+heart {
+    width: 100%;
+    display: grid;
+    margin-top: 2em;
+    text-align: center;
+
 }

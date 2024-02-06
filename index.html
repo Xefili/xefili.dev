@@ -22,31 +22,28 @@
         </leftDivision>
         <navBar>
             <a href="index.html">
-                <home id="home">Home <span class="material-symbols-outlined">home</span></home>
+                <home id="home"><span class="material-symbols-outlined">home</span></home>
             </a>
             <a href="blog.html">
-                <blog id="blog">Blog <span class="material-symbols-outlined">chat</span></Blog>
+                <blog id="blog"><span class="material-symbols-outlined">chat</span></Blog>
             </a>
             <a href="https://docs.bucketlounge.tk">
-                <docs id="docs">Documentation <span class="material-symbols-outlined">description</span></Docs>
+                <docs id="docs"><span class="material-symbols-outlined">description</span></Docs>
             </a>
             <a href="tools.html">
-                <tools id="tools">Tools <span class="material-symbols-outlined">construction</span></search>
+                <tools id="tools"><span class="material-symbols-outlined">construction</span></search>
             </a>
         </navBar>
     </pageHead>
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
     <pageContent>
-        <h1 style="text-align: center;">Glad you made it 👋<br>Welcome to Xefili.dev!</h1>
+        <h1 id="pageTitle">Glad you made it 👋<br>Welcome to Xefili.dev!</h1>
         <gridDivision>
-            <textTitle class="mobileOnly">
-                <h2>Glad you made it 👋<br>Welcome to Xefili.dev!</h2>
-            </textTitle>
             <imageDivision>
                 <img id="blogImage" src="assets/blog.svg" alt="Blog Image"/>
             </imageDivision>
             <textDivision>
-                <h2 class="desktopOnly">Find out what's new<br>on Xefili.dev</h2>
+                <h2>Find out what's new<br>on Xefili.dev</h2>
                 <span>Take a look at what's happening right now on Xefili.dev!</span>
             </textDivision>
                 <button type="submit" onclick="window.location.href='/blog.html'" id="divisionButton">To Blog</button>
@@ -55,14 +52,11 @@
         <cSpacer></cSpacer>
 
         <gridDivision>
-            <textTitle class="mobileOnly">
-                <h2>Got a problem?</h2>
-            </textTitle>
             <imageDivision>
                 <img id="blogImage" src="assets/documentation.svg" alt="Blog Image"/>
             </imageDivision>
             <textDivision>
-                <h2 class="desktopOnly">Got a problem?</h2>
+                <h2>Got a problem?</h2>
                 <span>Read the Bucket Helper Documentation to get help!</span>
             </textDivision>
             <button type="submit" onclick="window.location.href='docs.bucketlounge.tk'" id="divisionButton">To Documentation</button>
@@ -71,18 +65,20 @@
         <cSpacer></cSpacer>
 
         <gridDivision>
-            <textTitle class="mobileOnly">
-                <h2>The Tools I use!</h2>
-            </textTitle>
             <imageDivision>
                 <img id="blogImage" src="assets/tools.svg" alt="Blog Image"/>
             </imageDivision>
             <textDivision>
-                <h2 class="desktopOnly">The Tools I use!</h2>
+                <h2>The Tools I use!</h2>
                 <span>My personal collection of handy tools and websites for programming and troubleshooting.</span>
             </textDivision>
             <button type="submit" onclick="window.location.href='/tools.html'" id="divisionButton">To Tool Collection</button>
         </gridDivision>
     </pageContent>
 </body>
+<script>
+    const handleZoom = () => {
+  document.body.style.zoom = `${Math.round(100 / window.devicePixelRatio)}%`
+}
+</script>
 </html>

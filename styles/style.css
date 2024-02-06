@@ -27,25 +27,25 @@ pageHead {
     z-index: 2;
 }
 leftDivision {
-    width: 15%;
     height: 3rem;
-    display: inline-flex;
-    justify-content: space-evenly;
+    display: inline-grid;
+    gap: .5rem;
+    justify-content: center;
     align-items: center;
 }
-logo {
-    height: 2rem;
-    width: 2rem;
-}
 #logo {
+    grid-column: 1;
     height: 2rem;
     width: 2rem;
+    margin-left: .5rem;
+}
+logoText {
+    grid-column: 2;
 }
 navbar {
     display: flex;
     float: right;
     height: 3rem;
-    width: 30%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -58,13 +58,19 @@ a {
     color: black;
     text-decoration: none;
 }
+#pageTitle {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
 pageContent {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     margin-top: calc(3rem + 2px);
-    height: auto;
-    width: 100%;
     z-index: 1;
+    justify-content: center;
+    width: inherit;
 }
 h1, h2, h3 {
     font-size: 3rem;
@@ -75,11 +81,8 @@ h1, h2, h3 {
     text-decoration: underline;
     font-family: "Poppins", system-ui, sans-serif;
 }
-.mobileOnly {
-    display: none;
-}
-.desktopOnly {
-    display: contents;
+h2 {
+    text-decoration: none;
 }
 cSpacer {
     display: inline-block;
@@ -91,10 +94,9 @@ gridDivision {
     display: grid;
     justify-items: center;
     align-items: center;
-    height: 24rem;
-    margin-left: 20em;
-    margin-right: 20rem;
+    min-height: 24rem;
     column-gap: 1rem;
+    row-gap: 1rem;
 }
 imageDivision {
     display: grid;
@@ -102,13 +104,11 @@ imageDivision {
 }
 #blogImage {
     aspect-ratio: initial;
-    scale: 1.75;
 }
 textDivision {
     display: grid;
     grid-column: 2;
     grid-row: 1;
-    width: 32rem;
 }
 #divisionButton {
     padding: 1rem;
@@ -140,3 +140,50 @@ textDivision {
         color: white;
     }
 }
+@media (min-width: 600px) {
+    home::before {
+        content: "Home⠀";
+    }
+    blog::before {
+        content: "Blog⠀";
+    }
+    docs::before {
+        content: "Documentation⠀";
+    }
+    tools::before {
+        content: "Tools⠀";
+    }
+    imageDivision {
+        >img {
+            width: 24rem;
+        }
+    }
+    gridDivision {
+        grid-template-columns: 24rem 48rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    gridDivision {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    textDivision {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+    imageDivision {
+        scale: .75;
+    }
+    #divisionButton {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    h1, h2, h3 {
+        font-size: 2rem;
+    }
+}
+/*
+This code has been tested on a 1440p desktop (edge dev: 123) and a Pixel 6 & 7 (chrome: latest)
+*/

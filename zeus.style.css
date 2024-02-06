@@ -1,11 +1,13 @@
+@import url("assets/CascadiaCode.ttf");
 body {
-    font-family: "Cascadia Code", monospace;
+    font-family: "CascadiaCode", monospace;
+    src: url("assets/CascadiaCode.ttf")format("ttf");
     margin:0;
 }
 pageHead {
     position: relative;
     font-weight: bold;
-    background: skyblue;
+    background: linear-gradient(to right, #299300A0, #009445A0, #009274A0, #008F9EA0, #0088BDA0);
     display: block;
     padding: .5em;
     >div {
@@ -19,7 +21,7 @@ a {
 }
 .grad {
     font-size: 16em;
-    background: linear-gradient(to left bottom, #0055b1, #4d56c7, #8250d6, #b740dc, #eb12d9);;
+    background: linear-gradient(to right, #299300, #009445, #009274, #008F9E, #0088BD);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -34,7 +36,7 @@ a {
 spacer {
     display: block;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: linear-gradient(to right, #299300, #009445, #009274, #008F9E, #0088BD);
     height: 1px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -71,7 +73,7 @@ spacer {
 }
 sp {
     width: 80%;
-    background: gray;
+    background: linear-gradient(to right top, #d81c8f, #fe3370, #ff604e, #ff8f2a, #ffbd00, #d7d609, #a4ea40, #59fb77, #00efbc, #00dcf1, #00c4ff, #00a7ff);
     height: 1px;
     justify-self: center;
 }

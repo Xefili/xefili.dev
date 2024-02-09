@@ -8,71 +8,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto+Flex:opsz,wdth,wght@8..144,112.5,400;8..144,112.5,700;8..144,112.5,900&display=swap" rel="stylesheet">
-    <link id="swap" rel="stylesheet" href="styles/style.css"/>
+    <!-- <link id="swap" rel="stylesheet" href="styles/style.css"/> -->
+    <link id="swap" rel="stylesheet" href="styles/build.css"/>
     <link rel="icon" type="image/x-icon" href="assets/Bucket Helper.svg">
     <title>Home - Bucket Lounge</title>
 </head>
-<body>
-    <pageHead id="pageHead">
-        <leftDivision>
-            <logo><img id="logo" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
-            <logoText>
-                <span>Xefili.dev</span>
+<body class="dark:bg-[#2c2c2c]">
+    <pageHead class="fixed block h-12 w-full bg-[#30aec4a9] dark:bg-gradient-to-r from-blue-600 to-violet-600 backdrop-blur-lg z-20">
+        <leftDivision class="h-12 inline-grid grid-cols-[1fr 1fr] gap-2 justify-center items-center">
+            <logo><img class="col-span-1 w-8 h-8 ml-2" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
+            <logoText class="col-start-2">
+                <span class="font-headerFont font-black">Xefili.dev</span>
             </logoText>
         </leftDivision>
-        <navBar>
+        <navBar class="flex float-right h-12 items-center justify-evenly">
             <a href="index.html">
-                <home id="home"><span class="material-symbols-outlined">home</span></home>
+                <home class="flex items-center font-black md:before:content-['Home⠀']"><span class="material-symbols-outlined">home</span></home>
             </a>
             <a href="blog.html">
-                <blog id="blog"><span class="material-symbols-outlined">chat</span></Blog>
+                <blog class="flex items-center font-black md:before:content-['Blog⠀']"><span class="material-symbols-outlined">chat</span></Blog>
             </a>
             <a href="https://docs.bucketlounge.tk">
-                <docs id="docs"><span class="material-symbols-outlined">description</span></Docs>
+                <docs class="flex items-center font-black md:before:content-['Documentation⠀']"><span class="material-symbols-outlined">description</span></Docs>
             </a>
             <a href="tools.html">
-                <tools id="tools"><span class="material-symbols-outlined">construction</span></search>
+                <tools class="flex items-center font-black md:before:content-['Tools⠀']"><span class="material-symbols-outlined">construction</span></search>
             </a>
         </navBar>
     </pageHead>
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
-    <pageContent>
-        <h1 id="pageTitle">Glad you made it 👋<br>Welcome to Xefili.dev!</h1>
-        <gridDivision>
-            <imageDivision>
-                <img id="blogImage" src="assets/blog.svg" alt="Blog Image"/>
+    <pageContent class="flex flex-col absolute mt-16 z-10 content-center w-full dark:bg-[#2c2c2c] dark:text-white">
+        <h1 class="w-full text-center justify-center">Glad you made it 👋<br>Welcome to Xefili.dev!</h1>
+        <cSpacer class="h-12"></cSpacer>
+        <gridDivision class="grid justify-items-center items-center min-h-96 gap-4 md:grid-cols-[24rem,32rem] md:justify-center md:gap-x-20">
+            <imageDivision class="md:col-span-1 md:row-span-2 md:scale-150 aspect-[inherit]">
+                <img src="assets/blog.svg" alt="Blog Image"/>
             </imageDivision>
-            <textDivision>
+            <textDivision class="text-center md:col-start-2">
                 <h2>Find out what's new<br>on Xefili.dev</h2>
                 <span>Take a look at what's happening right now on Xefili.dev!</span>
             </textDivision>
-                <button type="submit" onclick="window.location.href='/blog.html'" id="divisionButton">To Blog</button>
+                <button class="button md:col-start-2 md:col-end-3 md:mt-0" type="submit" onclick="window.location.href='/blog.html'" id="divisionButton">To Blog</button>
         </gridDivision>
 
-        <cSpacer></cSpacer>
+        <cSpacer class="h-12"></cSpacer>
 
-        <gridDivision>
-            <imageDivision>
+        <gridDivision class="grid justify-items-center items-center min-h-96 gap-4 md:grid-cols-[24rem,32rem] md:justify-center md:gap-x-20">
+            <imageDivision class="md:col-span-1 md:row-span-2 md:scale-150 aspect-[inherit]">
                 <img id="blogImage" src="assets/documentation.svg" alt="Blog Image"/>
             </imageDivision>
-            <textDivision>
+            <textDivision class="text-center md:col-start-2">
                 <h2>Got a problem?</h2>
                 <span>Read the Bucket Helper Documentation to get help!</span>
             </textDivision>
-            <button type="submit" onclick="window.location.href='docs.bucketlounge.tk'" id="divisionButton">To Documentation</button>
+            <button class="button" type="submit" onclick="window.location.href='learn.xefili.dev'" id="divisionButton">To Documentation</button>
         </gridDivision>
 
-        <cSpacer></cSpacer>
+        <cSpacer class="h-12"></cSpacer>
 
-        <gridDivision>
-            <imageDivision>
+        <gridDivision class="grid justify-items-center items-center min-h-96 gap-4 md:grid-cols-[24rem,32rem] md:justify-center md:gap-x-20">
+            <imageDivision class="md:col-span-1 md:row-span-2 md:scale-150 aspect-[inherit]">
                 <img id="blogImage" src="assets/tools.svg" alt="Blog Image"/>
             </imageDivision>
-            <textDivision>
+            <textDivision class="text-center md:col-start-2">
                 <h2>The Tools I use!</h2>
                 <span>My personal collection of handy tools and websites for programming and troubleshooting.</span>
             </textDivision>
-            <button type="submit" onclick="window.location.href='/tools.html'" id="divisionButton">To Tool Collection</button>
+            <button class="button" type="submit" onclick="window.location.href='/tools.html'" id="divisionButton">To Tool Collection</button>
         </gridDivision>
     </pageContent>
 </body>

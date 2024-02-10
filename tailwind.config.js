@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./*.html"],
   theme: {
     fontFamily: {
       'sans': ['Roboto Flex', 'system-ui', 'sans-serif'],
       'headerFont': ['Poppins', 'system-ui', 'sans-serif'],
-      'mono': ['Ubuntu Mono', 'Cascadia Code', 'monospace']
+      'mono': ['Ubuntu Mono', 'Cascadia Code', 'monospace'],
+      'zeusMono': ['Cascadia Code', 'Ubuntu Mono', 'monospace']
     },
     extend: {},
   },

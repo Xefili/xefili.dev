@@ -1,18 +1,24 @@
-@import 'tw/base';
-@import 'tw/components';
-@import 'tw/utils';
+@import '../node_modules/tailwindcss/base.css';
+@import '../node_modules/tailwindcss/components.css';
+@import '../node_modules/tailwindcss/utilities.css';
 
-@layer components {
-a {
-    @apply p-4 text-black no-underline;
-}
+@layer base {
 h2 {
     @apply no-underline text-5xl w-full content-center font-black font-headerFont;
 }
 h1, h3 {
-    @apply text-5xl flex w-full content-center font-black underline font-headerFont;
+    @apply text-5xl flex content-center w-full font-black underline font-headerFont;
 }
 .button {
-    @apply p-4 bg-[#3cbe61] dark:bg-[#4cc98a] rounded-3xl w-40 cursor-pointer font-black dark:text-black;
+    @apply p-4 bg-[#3cbe61] dark:bg-[#4cc98a] rounded-3xl w-40 cursor-pointer font-black;
+}
+.grad {
+    @apply bg-gradient-to-br from-[#299300] via-[#009274] to-[#0088BD] bg-clip-text;
+}
+e.material-symbols-outlined {
+    @apply text-3xl;
+}
+.a {
+    @apply p-4 no-underline;
 }
 }

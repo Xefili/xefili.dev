@@ -1,25 +1,46 @@
 # Readme available on [xefili.dev](https://learn.xefili.dev/) :)
 
-# Build from source
+# Building for production
 
 ## Requirements
 
-- Nodejs v16 or higher
-- source code
+- NodeJS v16 or higher
+- Source Code
+- git (not required)
 
-## Steps
+## Steps (Windows 10/11)
 
-1. Download source files
-2. In a terminal, run 
+1. Create a new folder and open it.
+2. In a terminal, navigate to the folder and run 
+```powershell
+git clone https://github.com/xefili/xefili.dev
+cd .\xefili.dev\
+```
+3. Install required packages
 ```powershell
 npm install
 ```
-3. Build CSS file(s) with 
+4. Build TailwindCSS files
 ```powershell
 npx tailwindcss -i .\styles\input.css -o .\styles\build.css --minify
 ```
--[!] Always comment out line 11 in index.html if not already commented out. 
 
-## Cleaning up
+## Steps (macOS & Linux)
 
-When building the main page (index.html), only `index.html` and `styles\build.css` are required. When using all pages, keep all files `styles\` except `style.css.old` and the `tw\` folder.
+These instructions are untested as of now!
+
+1. Create a new folder and open it:
+```shell
+mkdir xefili && cd xefili
+```
+2. Clone the repo
+```shell
+git clone https://github.com/xefili/xefili.dev && cd xefili.dev
+```
+3. Build TailwindCSS files
+```shell
+npm install && npx tailwindcss -i styles/input.css -o styles/build.css --minify
+```
+
+# Notes
+The standart `styles/style.css` file can also be used, but file size might increase.

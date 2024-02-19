@@ -8,47 +8,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto+Flex:opsz,wdth,wght@8..144,112.5,400;8..144,112.5,700;8..144,112.5,900&display=swap" rel="stylesheet">
-    <link id="swap" rel="stylesheet" href="../styles/style.css"/>
-    <link id="swap" rel="stylesheet" href="displayArticle.style.css">
+    <link rel="stylesheet" href="../styles/build.css"/>
     <link rel="icon" type="image/x-icon" href="../assets/Bucket Helper.svg">
     <title>Archive - Xefili.dev</title>
 </head>
-<body>
-    <pageHead id="pageHead">
-        <leftDivision>
-            <logo><img id="logo" src="../assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
-            <logoText>
-                <span>Xefili.dev</span>
+<body class="dark:bg-[#2c2c2c]">
+    <pageHead class="fixed block h-12 w-full bg-[#30aec4a9] dark:bg-gradient-to-r from-blue-600 to-violet-600 backdrop-blur-lg z-20">
+        <leftDivision class="h-12 inline-grid grid-cols-[1fr 1fr] gap-2 justify-center items-center">
+            <logo><img class="col-span-1 w-8 h-8 ml-2" src="../assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
+            <logoText class="col-start-2">
+                <span class="font-headerFont font-black">Xefili.dev</span>
             </logoText>
         </leftDivision>
-        <navBar>
-            <a href="../index.html">
-                <home id="home">Home <span class="material-symbols-outlined">home</span></home>
+        <navBar class="flex float-right h-12 items-center justify-evenly">
+            <a href="https://xefili.dev">
+                <home class="flex items-center font-black mr-8 md:before:content-['Home⠀']"><span class="material-symbols-outlined">home</span></home>
             </a>
-            <a href="../blog.html">
-                <blog id="blog">Blog <span class="material-symbols-outlined">chat</span></Blog>
+            <a href="https://xefili.dev/blog.html">
+                <blog class="flex items-center font-black mr-8 md:before:content-['Blog⠀']"><span class="material-symbols-outlined">chat</span></Blog>
             </a>
             <a href="https://xefili.dev/docs">
-                <docs id="docs">Documentation <span class="material-symbols-outlined">description</span></Docs>
+                <docs class="flex items-center font-black mr-8 md:before:content-['Documentation⠀']"><span class="material-symbols-outlined">description</span></Docs>
             </a>
-            <a href="../tools.html">
-                <tools id="tools">Tools <span class="material-symbols-outlined">construction</span></search>
+            <a href="https://xefili.dev/tools">
+                <tools class="flex items-center font-black mr-8 md:before:content-['Tools⠀']"><span class="material-symbols-outlined">construction</span></search>
             </a>
         </navBar>
     </pageHead>
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
-    <pageContent>
-        <search>
-            <input type="text" placeholder="Search..." id="search-input">
+    <pageContent class="mt-8 absolute w-full">
+        <search class="w-[inherit] flex justify-center">
+            <input class="bg-[#30aec4a9] dark:bg-gradient-to-l from-blue-600 to-violet-600 m-8 p-2 md:p-4 w-72 md:w-96 rounded-2xl md:rounded-3xl" type="text" placeholder="Search..." id="search-input">
         </search>
-        <sec>
+        <sec class="w-[inherit] flex justify-center dark:text-white">
             <ul id="search-ul">
-                <li ><a></a></li>
+                <li><a></a></li>
                 <li><a></a></li>
                 <li><a></a></li>
             </ul>
         </sec>
-        <flex>
+        <flex class="w-[inherit] flex justify-center">
             <div id="generator"></div>
         </flex>
     </pageContent>

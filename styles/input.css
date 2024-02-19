@@ -21,4 +21,7 @@ e.material-symbols-outlined {
 .a {
     @apply p-4 no-underline;
 }
+box {
+    @apply md:grid md:grid-cols-[1fr_5fr] md:w-4/5 md:mb-12 
+}
 }

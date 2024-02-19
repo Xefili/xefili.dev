@@ -7,7 +7,7 @@ var len = await raw.json()
 for(i=1;i<len.length+1;i++) {
     var res = await fetch(`https://api.xefili.dev/articles/${i}`, {"method":"GET"});
     var content = await res.json();
-    div.appendChild(document.createElement("box")).innerHTML += `<h1 id=${content.title}>${content.title}</h1><text>${content.content}</text>`
+    div.appendChild(document.createElement("box")).innerHTML += `<h1 class="dark:text-white" id=${content.title}>${content.title}</h1><text class="dark:text-white">${content.content}</text>`
 }
 
 document.getElementById("search-input").addEventListener("input", async () => {

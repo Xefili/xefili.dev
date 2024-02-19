@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./docs/*.html", "./tools/*.html", "./blog/*.html", "./zeus/*.html"], //narrow down to speed up build times
+  content: ["./*.html", "./docs/*.html", "./tools/*.html", "./blog/*.html", "./blog/*.js", "./zeus/*.html"], //narrow down to speed up build times
   theme: {
     fontFamily: {
       'sans': ['Roboto Flex', 'system-ui', 'sans-serif'],

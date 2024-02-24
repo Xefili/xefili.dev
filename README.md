@@ -1,4 +1,6 @@
-# Readme available on [xefili.dev](https://learn.xefili.dev/) :)
+# Important Notice
+
+**As of right now (24.02.2024) the blog is not working and displaying placeholder text. This will be fixed soon!**
 
 # Building for production
 
@@ -12,16 +14,16 @@
 
 1. Create a new folder and open it.
 2. In a terminal, navigate to the folder and run 
-```powershell
+```shell
 git clone https://github.com/xefili/xefili.dev
 cd .\xefili.dev\
 ```
 3. Install required packages
-```powershell
+```shell
 npm install
 ```
 4. Build TailwindCSS files
-```powershell
+```shell
 npx tailwindcss -i .\styles\input.css -o .\styles\build.css --minify
 ```
 

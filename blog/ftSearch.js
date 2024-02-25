@@ -1,13 +1,19 @@
+alert("this page is broken and will fixed when I regained my sanity. (this should take about 1-6 months)")
+
+
 const div = document.getElementById("generator");
 
 let i;
 var raw = await fetch("https://api.xefili.dev/articles", {"method":"GET"})
-var len = await raw.json()
+var jsonResponse = await raw.json()
 
-for(i=1;i<len.length+1;i++) {
-    var res = await fetch(`https://api.xefili.dev/articles/${i}`, {"method":"GET"});
-    var content = await res.json();
-    div.appendChild(document.createElement("box")).innerHTML += `<h1 class="dark:text-white" id=${content.title}>${content.title}</h1><text class="dark:text-white">${content.content}</text>`
+for(i=0;i<jsonResponse.length+1;i++) {
+    try {
+        let content = jsonResponse[i];
+        div.appendChild(document.createElement("box")).innerHTML += `<h1 class="dark:text-white" id=${content.title}>${content.title}</h1><text class="dark:text-white">${content.content}</text>`
+    } catch(e) {
+        console.log("");
+    }
 }
 
 document.getElementById("search-input").addEventListener("input", async () => {
@@ -20,8 +26,8 @@ document.getElementById("search-input").addEventListener("input", async () => {
     const content = await res.json();
     console.info(content);
     let i;
-    for(i=0;i<li.length;i++) {
-        var a = li[i].getElementsByTagName("a")[0].innerHTML = content[i].title;
-        var b = li[i].getElementsByTagName("a")[0].setAttribute("href", `#${content[i].title}`);
+    for(i=0;i<li.length+1;i++) {
+        li[i].getElementsByTagName("a")[0].innerHTML = `${content[i].title}`;
+        li[i].getElementsByTagName("a")[0].setAttribute("href", `#${content[i].title}`);
     }
 })

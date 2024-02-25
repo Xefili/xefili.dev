@@ -1,7 +1,3 @@
-# Important Notice
-
-**As of right now (24.02.2024) the blog is not working and displaying placeholder text. This will be fixed soon!**
-
 # Building for production
 
 ## Requirements
@@ -44,5 +40,6 @@ git clone https://github.com/xefili/xefili.dev && cd xefili.dev
 npm install && npx tailwindcss -i styles/input.css -o styles/build.css --minify
 ```
 
-# Notes
-The standart `styles/style.css` file can also be used, but file size might increase.
+# Documentatio
+
+The documentation is still being written and can be found [here](https://xefili.dev/docs)

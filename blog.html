@@ -36,49 +36,50 @@
             </a>
         </navBar>
     </pageHead>
-    <pageContent class=" z-10 mt-16 absolute dark:text-white" ondblclick="ret()">
-        <h1 class="w-full text-center block">Welcome to the blog!</h1>
-        <p class="w-full text-center block md:text-2xl">read up on the latest developments of this page.</p>
-        <articles class="grid md:grid-cols-3 gap-4">
-            <art id="art1" class="border-slate-500 border-2 m-2 rounded-3xl">
-                <div class="inline-block relative m-2 max-h-96">
-                    <h3>Lorem ipsum</h3>
-                    <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-                    <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
-                </div>
-            </art>
-            <art id="art2" class="border-slate-500 border-2 m-2 rounded-3xl">
-                <div class="inline-block relative m-2 max-h-96">
-                    <h3>Lorem ipsum</h3>
-                    <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-                    <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
-                </div>
-            </art>
-            <art id="art3" class="border-slate-500 border-2 m-2 rounded-3xl">
-                <div class="inline-block relative m-2 max-h-96">
-                    <h3>Lorem ipsum</h3>
-                    <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-                    <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
-                </div>
-            </art>
-            <art id="art4" class="border-slate-500 border-2 m-2 rounded-3xl">
-                <div class="inline-block relative m-2 max-h-96">
-                    <h3>Lorem ipsum</h3>
-                    <text>Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
-                    <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
-                </div>
-            </art>
-        </articles>
-        <p>Looking for a different article? Visit the archive <a id="a" href="/blog/displayArticle.html">here</a></p> <!-- this id is stupid but works :) -->
-        <action class="hidden" id="action">
-            <titleBar>
-                <t>Looks like we've hit a roadblock</t>
-                <close class="material-symbols-outlined" id="close">close</close>
-            </titleBar>
-            <content id="alertBox">
-                	<!-- This may be filled by the catch block of script.js -->
-            </content>
-        </action>
+    <pageContent class=" z-10 mt-16 absolute dark:text-white w-full">
+        <div class="">
+            <h1 class="w-full text-center block">Welcome to the blog!</h1>
+            <p class="w-full text-center block md:text-2xl">read up on the latest developments of this page.</p>
+            <articles class="grid md:grid-cols-3 gap-4">
+                <a id="artLink1" class="border-slate-500 border-2 m-2 rounded-3xl">
+                    <art id="art1" class="p-2 w-[inherit]">
+                        <div class="inline-block relative m-2 max-h-96">
+                            <h3 id="artTitle1" class="w-full block">Lorem ipsum</h3>
+                            <text id="artText1">Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
+                            <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
+                        </div>
+                    </art>
+                </a>
+                <a id="artLink2" class="border-slate-500 border-2 m-2 rounded-3xl">
+                    <art id="art2">
+                        <div class="inline-block relative m-2 max-h-96">
+                            <h3 id="artTitle2" class="w-full block">Lorem ipsum</h3>
+                            <text id="artText2">Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
+                            <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
+                        </div>
+                    </art>
+                </a>
+                <a id="artLink3" class="border-slate-500 border-2 m-2 rounded-3xl">
+                    <art id="art3">
+                        <div class="inline-block relative m-2 max-h-96">
+                            <h3 id="artTitle3" class="w-full block">Lorem ipsum</h3>
+                            <text id="artText3">Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
+                            <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
+                        </div>
+                    </art>
+                </a>
+                <a id="artLink4" class="border-slate-500 border-2 m-2 rounded-3xl">
+                    <art id="art4">
+                        <div class="inline-block relative m-2 max-h-96">
+                            <h3 id="artTitle4" class="w-full block">Lorem ipsum</h3>
+                            <text id="artText4">Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.Lorem ipsum dies arae dis owesum.</text>
+                            <blrr class="bg-gradient-to-b from-[#ffffff00] dark:from-[#2c2c2c00] to-[#ffffffff] dark:to-[#2c2c2cff] absolute h-12 w-full left-0 bottom-0"></blrr>
+                        </div>
+                    </art>
+                </a>
+            </articles>
+        </div>
+        <p>Looking for a different article? Visit the archive <a class="underline-offset-4 underline" id="a" href="/blog/displayArticle.html">here</a></p> <!-- this id is stupid but works :) -->
     </pageContent>
     <script src="script.js" type="module"></script>
     <script>

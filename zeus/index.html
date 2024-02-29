@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="../styles/build.css">
     <title>Home - Zeus Airlines</title>
 </head>
-<body class="dark:bg-slate-800 text-white">
+<body class="dark:bg-slate-800 dark:text-white">
     <pageHead class="z-index-10 relative font-bold bg-gradient-to-r from-[#299300a0] via-[#009274a0] to-[#0088bda0] block p-2">
         <div2>
             <span>Zeus Airlines</span>
         </div2>
         <div class="float-right">
             <span class="p-1"><a class="[color:inherit]" href="#About us">About us</a></span>
-            <span class="p-1"><a class="[color:inherit]" href="#Flights">Flights</a></span>
+            <span class="p-1"><a class="[color:inherit]" href="#Meet us">Meet us</a></span>
             <span class="p-1"><a class="[color:inherit]" href="#Contact us">Contact us</a></span>
         </div>
     </pageHead>
@@ -30,46 +30,16 @@
         <span class="material-symbols-outlined grad text-[6rem] [-webkit-text-fill-color:transparent]">airplane_ticket savings</span>
     </div>
     <spacer class="h-[2px] bg-gradient-to-r from-[#d81c8f] via-[#ffbd00] to-[#00a7ff] block mt-8 mb-8"></spacer>
-    <div class="grid grid-cols-1 gap-6 md:text-2xl">
-        <h1 class="block text-center no-underline" id="Flights">Flights</h1>
-        <div class="grid grid-cols-[1fr] gap-y-12 md:w-1/2 md:translate-x-1/2">
-            <row class="grid [grid-template-rows:1fr] grid-cols-[1fr_2fr_1fr] font-bold text-center gap-6 items-center">
-                <slot1 class="border-r-2 border-slate-400">FRA</slot1>
-                <slot2 class="grid grid-cols-5 items-center">12:00 <e class="material-symbols-outlined">flight_takeoff</e><e class="material-symbols-outlined">arrow_forward</e><e class="material-symbols-outlined">flight_land</e> 13:00</slot2>
-                <slot3 class="border-l-2 border-r-slate-400">MJT</slot3>
-            </row>
-            <row class="grid [grid-template-rows:1fr] grid-cols-[1fr_2fr_1fr] font-bold text-center gap-6 items-center">
-                <slot1 class="border-r-2 border-slate-400">FRA</slot1>
-                <slot2 class="grid grid-cols-5 items-center">12:00 <e class="material-symbols-outlined">flight_takeoff</e><e class="material-symbols-outlined">arrow_forward</e><e class="material-symbols-outlined">flight_land</e> 13:00</slot2>
-                <slot3 class="border-l-2 border-r-slate-400">MJT</slot3>
-            </row>
-            <row class="grid [grid-template-rows:1fr] grid-cols-[1fr_2fr_1fr] font-bold text-center gap-6 items-center">
-                <slot1 class="border-r-2 border-slate-400">FRA</slot1>
-                <slot2 class="grid grid-cols-5 items-center">12:00 <e class="material-symbols-outlined">flight_takeoff</e><e class="material-symbols-outlined">arrow_forward</e><e class="material-symbols-outlined">flight_land</e> 13:00</slot2>
-                <slot3 class="border-l-2 border-r-slate-400">MJT</slot3>
-            </row>
-            <row class="grid [grid-template-rows:1fr] grid-cols-[1fr_2fr_1fr] font-bold text-center gap-6 items-center">
-                <slot1 class="border-r-2 border-slate-400">FRA</slot1>
-                <slot2 class="grid grid-cols-5 items-center">12:00 <e class="material-symbols-outlined">flight_takeoff</e><e class="material-symbols-outlined">arrow_forward</e><e class="material-symbols-outlined">flight_land</e> 13:00</slot2>
-                <slot3 class="border-l-2 border-r-slate-400">MJT</slot3>
-            </row>
-            <row class="grid [grid-template-rows:1fr] grid-cols-[1fr_2fr_1fr] font-bold text-center gap-6 items-center">
-                <slot1 class="border-r-2 border-slate-400">FRA</slot1>
-                <slot2 class="grid grid-cols-5 items-center">12:00 <e class="material-symbols-outlined">flight_takeoff</e><e class="material-symbols-outlined">arrow_forward</e><e class="material-symbols-outlined">flight_land</e> 13:00</slot2>
-                <slot3 class="border-l-2 border-r-slate-400">MJT</slot3>
-            </row>
-        </div>
+    <div class="m-4 w-[inherit] text-center">
+        <h1 class="block text-center no-underline mb-4" id="Meet us">Meet Us</h1>
+        <p>See our planes in action at the Dubai Airshow next year and meet our team!</p>
+        <span class="material-symbols-outlined grad text-[6rem] [-webkit-text-fill-color:transparent]">groups</span>
     </div>
     <spacer class="h-[2px] bg-gradient-to-r from-[#d81c8f] via-[#ffbd00] to-[#00a7ff] block mt-8 mb-8"></spacer>
-    <h1 class="block text-center no-underline mb-8" id="Contact us">Contact us</h1>
-    <div class="flex w-[inherit] justify-center">
-        <div class="grid grid-cols-2 md:grid-cols-4 text-center items-center w-80 md:w-1/2 gap-y-4">
-            <e class="material-symbols-outlined grad [-webkit-text-fill-color:transparent]">phone</e>
-            <span>+49 000 000000000</span>
-            <e class="material-symbols-outlined grad [-webkit-text-fill-color:transparent]">mail</e>
-            <a href="mailto:zeus@xefili.dev">zeus@xefili.dev</a>
-        </div>
-    </div>    
-    <heart class="block text-center mt-12">Handcrafted with ❤️ in Germany</heart>
+    <div class="m-4 w-[inherit] text-center">
+        <h1 class="block text-center no-underline mb-4" id="Contact us">Contact us</h1>
+        <p>If you have any questions regarding partnerships, prices or availability, feel free to email us at zeus@xefili.dev</p>    
+    </div>
+    <heart class="block text-center mt-24">Handcrafted with ❤️ in Germany</heart>
 </body>
 </html>

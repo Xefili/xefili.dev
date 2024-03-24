@@ -40,6 +40,6 @@ git clone https://github.com/xefili/xefili.dev && cd xefili.dev
 npm install && npx tailwindcss -i styles/input.css -o styles/build.css --minify
 ```
 
-# Documentatio
+# Documentation
 
-The documentation is still being written and can be found [here](https://xefili.dev/docs)
+The official docs are moving to the Astro framework. This allows the use of MDX files to speed up writing the documentation. The repo will be available (here)[https://github.com/xefili/documentation]

@@ -1,6 +1,3 @@
-alert("this page is broken and will fixed when I regained my sanity. (this should take about 1-6 months)")
-
-
 const div = document.getElementById("generator");
 
 let i;

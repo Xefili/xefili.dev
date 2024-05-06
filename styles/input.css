@@ -35,4 +35,7 @@ box {
 .carrousel {
     @apply border-2 border-slate-500 min-w-72 snap-center mx-4 rounded-lg font-circle;
 }
+.bg-card {
+    @apply border-2 border-slate-200 min-w-72 min-h-64 rounded-lg p-2 snap-center;
+}
 }

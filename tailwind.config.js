@@ -6,7 +6,9 @@ module.exports = {
       'sans': ['Roboto Flex', 'system-ui', 'sans-serif'],
       'headerFont': ['Poppins', 'system-ui', 'sans-serif'],
       'mono': ['Ubuntu Mono', 'Cascadia Code', 'monospace'],
-      'zeusMono': ['Cascadia Code', 'Ubuntu Mono', 'monospace']
+      'zeusMono': ['Cascadia Code', 'Ubuntu Mono', 'monospace'],
+      'circle': ['Plus Jakarta Sans', 'sans-serif'],
+      'circleBold': ['Plus Jakarta Sans Extrabold', 'sans-serif']
     },
     extend: {},
   },

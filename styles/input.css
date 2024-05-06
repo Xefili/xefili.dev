@@ -3,6 +3,14 @@
 @import '../node_modules/tailwindcss/utilities.css';
 
 @layer base {
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../assets/PlusJakartaSans-Regular.ttf")format(truetype);
+}
+@font-face {
+    font-family: "Plus Jakarta Sans Extrabold";
+    src: url("../assets/PlusJakartaSans-ExtraBold.ttf")format(truetype);
+}
 h2 {
     @apply no-underline text-3xl md:text-5xl w-full content-center font-black font-headerFont;
 }
@@ -25,6 +33,6 @@ box {
     @apply md:grid md:grid-cols-[1fr_5fr] md:w-4/5 md:mb-12;
 }
 .carrousel {
-    @apply border-2 border-slate-500 min-w-72 snap-center mx-4 rounded-lg;
+    @apply border-2 border-slate-500 min-w-72 snap-center mx-4 rounded-lg font-circle;
 }
 }

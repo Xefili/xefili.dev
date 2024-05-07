@@ -1,0 +1,20 @@
+<svg width="183" height="166" viewBox="0 0 183 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 17.5H66L69.5 26.5H51.5C51.5 26.5 49.5 31 45 30.5C40.5 30 38 24.5 38 24.5V17.5Z" fill="black" stroke="black"/>
+<path d="M144.5 18H116.5L113 27H131C131 27 133 31.5 137.5 31C142 30.5 144.5 25 144.5 25V18Z" fill="black" stroke="black"/>
+<path d="M52 13H42C42 13 42.5 7 47.5 7C52.5 7 52 13 52 13Z" fill="black" stroke="black"/>
+<path d="M131.014 13H141.014C141.014 13 140.514 7 135.514 7C130.514 7 131.014 13 131.014 13Z" fill="black" stroke="black"/>
+<path d="M0.5 6.50001C0.5 10.5 38.5 11 38.5 11C38.5 11 39.5 3.50002 47 3.50002C54.5 3.50002 55.5 10 55.5 10C55.5 10 80 8.50002 80 5.50002C80 2.50001 53.5 1.00002 53.5 1.00002C53.5 1.00002 46.5 0.5 37 1.00002C27.5 1.50003 0.5 2.5 0.5 6.50001Z" fill="black" stroke="black"/>
+<path d="M182.5 6.72223C182.5 10.7222 144.5 11.2222 144.5 11.2222C144.5 11.2222 143.5 3.72223 136 3.72223C128.5 3.72223 127.5 10.2222 127.5 10.2222C127.5 10.2222 103 8.72223 103 5.72223C103 2.72223 129.5 1.22223 129.5 1.22223C129.5 1.22223 136.5 0.722214 146 1.22223C155.5 1.72224 182.5 2.72221 182.5 6.72223Z" fill="black" stroke="black"/>
+<path d="M91.5 12.5C83.2411 12.5 70.5 14.5 70.5 14.5C70.5 14.5 72.1531 29.0468 78.5 34H104.5C110.847 29.0468 112.5 14 112.5 14C112.5 14 99.7589 12.5 91.5 12.5Z" fill="black" stroke="black"/>
+<path d="M56.5 45C48.6721 59 49.5 73 49.5 73H54C54 73 54 59.5 59.5 50C65 40.5 72.5 34.5 72.5 34.5L70 29C70 29 60.5 36.5 56.5 45Z" fill="black" stroke="black"/>
+<path d="M127 45C134.828 59 134 73 134 73H129.5C129.5 73 129.5 59.5 124 50C118.5 40.5 111 34.5 111 34.5L113.5 29C113.5 29 123 36.5 127 45Z" fill="black" stroke="black"/>
+<circle cx="91.5" cy="49.5" r="4.5" fill="black"/>
+<path d="M82 49.5C82 44.2533 86.2533 40 91.5 40C96.7467 40 101 44.2533 101 49.5C101 54.7467 96.7467 59 91.5 59C86.2533 59 82 54.7467 82 49.5Z" stroke="black" stroke-width="5"/>
+<path d="M91.5 80V163.5" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+<path d="M103 68L142 140" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+<path d="M80 68L41 140" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+<path d="M79 83L57 144" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+<path d="M104 83L126 144" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+<path d="M85 85L73 151" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+<path d="M98 85L110 151" stroke="#5A5A5A" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="../assets/bgm.svg" type="text/svg">
     <link rel="stylesheet" href="../styles/build.css">
     <title>BG Mobile</title>
 </head>
 <body>
-    <div class="flex justify-between border-b-2 border-slate-200">
+    <div class="flex justify-between border-b-2 border-slate-200 relative">
        <logo><img class="h-12" src="../assets/bgm.svg" alt=""></logo>
        <snackbar class="flex flex-row justify-between gap-12">
             <a href="#calls" class="material-symbols-outlined content-center">call</a>
             <a href="#dataplans" class="material-symbols-outlined content-center">network_cell</a>
             <a href="#dataplans" class="material-symbols-outlined content-center">shopping_cart</a>
-            <item class="material-symbols-outlined content-center mr-2">menu</item>
+            <button type="submit" onclick="openMenu()" class="material-symbols-outlined content-center mr-2">menu</button>
        </snackbar> 
     </div>
-
+    <div id="menu" class="hidden p-2 absolute z-10 bg-white w-full min-h-48">
+        <ul>
+            <li class="mb-2">Account</li>
+            <li class="mb-2">Data Plans</li>
+            <li class="mb-2">FTTH</li>
+            <li>Impressum</li>
+        </ul>
+    </div>
     <div class="m-2">
         <card class="flex flex-col bg-red-500 rounded-xl p-4">
             <h1>The new MEGA plan!</h1>
@@ -25,20 +33,20 @@
         </card>
     </div>
     <div class="m-2">
-        <carrousel class="flex gap-12 sticky">
-            <a class="border-b-2 border-red-500">mobile data</a>
-            <a class="border-b-2 border-red-500">calls</a>
-            <a class="border-b-2 border-red-500">phone plans</a>
-            <a class="border-b-2 border-red-500">FTTH</a>
+        <carrousel class="flex gap-12 static">
+            <a href="#dataplans" class="border-b-2 border-red-500">mobile data</a>
+            <a href="#calls" class="border-b-2 border-red-500">calls</a>
+            <a href="#phoneplans" class="border-b-2 border-red-500">phone plans</a>
+            <a href="#ftth" class="border-b-2 border-red-500">FTTH</a>
         </carrousel>
     </div>
     <div class="m-2">
         <h1 id="dataplans">Mobile data plans</h1>
         <carrousel class="flex flex-row snap-x snap-mandatory overflow-x-auto gap-4">
             <card class="bg-card">
-                <h1>12GB</h1>
-                <p>12GB data plan with lightning fast 5G connectivity.</p>
-                <span class="text-3xl font-bold flex mt-4">2,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <h1>6GB</h1>
+                <p>6GB data plan with lightning fast 5G connectivity.</p>
+                <span class="text-3xl font-bold flex mt-4">1,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
                     <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
@@ -52,26 +60,35 @@
                 </div>
             </card>
             <card class="bg-card">
-                <h1>12GB</h1>
-                <p>12GB data plan with lightning fast 5G connectivity.</p>
-                <span class="text-3xl font-bold flex mt-4">2,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <h1>24GB</h1>
+                <p>24GB data plan with lightning fast 5G connectivity.</p>
+                <span class="text-3xl font-bold flex mt-4">4,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
                     <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>12GB</h1>
-                <p>12GB data plan with lightning fast 5G connectivity.</p>
-                <span class="text-3xl font-bold flex mt-4">2,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <h1>36GB</h1>
+                <p>36GB data plan with lightning fast 5G connectivity.</p>
+                <span class="text-3xl font-bold flex mt-4">6,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
                     <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>12GB</h1>
-                <p>12GB data plan with lightning fast 5G connectivity.</p>
-                <span class="text-3xl font-bold flex mt-4">2,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <h1>50GB</h1>
+                <p>50GB data plan with lightning fast 5G connectivity.</p>
+                <span class="text-3xl font-bold flex mt-4">8€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
+                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                </div>
+            </card>
+            <card class="bg-card">
+                <h1>300GB</h1>
+                <p>300GB data plan with lightning fast 5G connectivity.</p>
+                <span class="text-3xl font-bold flex mt-4">25,-€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly*</span></span>
+                <span class="text-slate-400">After 6 months, monthly rate will rise to 30,-€!</span>
+                <div class="flex justify-center bottom-0">
                     <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
@@ -82,17 +99,29 @@
         <p>All plans include a flat rate for calls inside the EU and selected member states. For calls outside the EU and selected members, you may be charged a fee of -,20ct per minute and -,05ct per SMS. RCS messages are always free.</p>
     </div>
     <div class="m-2">
-        <h1>phone plans</h1>
+        <h1 id="phoneplans">phone plans</h1>
         <p>coming soon...</p>
     </div>
     <div class="m-2">
-        <h1>FTTH</h1>
-        <p>to be approved by the board of directors...</p>
+        <h1 id="ftth">FTTH</h1>
+        <p>Get blazing fast fibre optic internet connections for your home! Apply below to get a quote to get connected to our ever growing network!</p>
+        <div class="flex flex-col ml-24">
+            <span class="ml-4 font-bold mb-2 text-teal-500 text-2xl">500Mbps</span>
+            <span class="ml-16 font-bold mb-2 text-teal-500 text-2xl">1000Mbps</span>
+            <span class="ml-6 font-bold text-teal-500 text-2xl">2,5Gbps</span>
+        </div>
     </div>
 </body>
+<hidden class="blur-xl"></hidden>
 <script>
 function order() {
     alert("Ordered!\nUsed your saved card ending in 2401\nYou will be sent a confirmation email shortly\nThank you for your purchase!");
+}
+
+function openMenu() {
+    document.getElementById("menu").classList.toggle('hidden');
+    for(i=2; i<document.getElementsByClassName('m-2').length; i++)
+    document.getElementsByClassName('m-2')[i].classList.toggle('blur-xl');
 }
 </script>
 </html>

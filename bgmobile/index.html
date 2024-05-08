@@ -8,102 +8,124 @@
     <link rel="stylesheet" href="../styles/build.css">
     <title>BG Mobile</title>
 </head>
-<body>
-    <div class="flex justify-between border-b-2 border-slate-200 relative">
-       <logo><img class="h-12" src="../assets/bgm.svg" alt=""></logo>
+<body class="font-circle">
+    <div class="top-0 w-full flex justify-between border-b-2 border-slate-200 fixed bg-teal-100">
+       <logo class="flex flex-row"><img class="h-12 mt-1" src="../assets/bgm.svg" alt=""><span class="hidden lg:block self-center text-bold text-2xl font-circleBold">BG Mobile</span></logo>
        <snackbar class="flex flex-row justify-between gap-12">
-            <a href="#calls" class="material-symbols-outlined content-center">call</a>
-            <a href="#dataplans" class="material-symbols-outlined content-center">network_cell</a>
-            <a href="#dataplans" class="material-symbols-outlined content-center">shopping_cart</a>
-            <button type="submit" onclick="openMenu()" class="material-symbols-outlined content-center mr-2">menu</button>
+            <a href="#calls" class="lg:gap-2 lg:before:content-['Calls'] lg:flex items-center content-center"><e class="content-center material-symbols-outlined">call</e></a>
+            <a href="#dataplans" class="lg:gap-2 lg:before:content-['Data⠀Plans'] lg:flex items-center content-center"><e class="content-center material-symbols-outlined">network_cell</e></a>
+            <a href="#dataplans" class="lg:gap-2 lg:before:content-['Shop'] lg:flex items-center content-center"><e class="content-center material-symbols-outlined">shopping_cart</e></a>
+            <button type="submit" onclick="openMenu()" class="lg:gap-2 lg:before:content-['Menu'] lg:flex items-center content-center"><e class="content-center material-symbols-outlined">menu</e></button>
        </snackbar> 
     </div>
     <div id="menu" class="hidden p-2 absolute z-10 bg-white w-full min-h-48">
         <ul>
-            <li class="mb-2">Account</li>
-            <li class="mb-2">Data Plans</li>
-            <li class="mb-2">FTTH</li>
-            <li>Impressum</li>
+            <li class="mb-2"><a>Account</a></li>
+            <li class="mb-2"><a>Data plans</a></li>
+            <li class="mb-2"><a>FTTH</a></li>
+            <li><a href="">Impressum</a></li>
         </ul>
     </div>
-    <div class="m-2">
-        <card class="flex flex-col bg-red-500 rounded-xl p-4">
-            <h1>The new MEGA plan!</h1>
-            <p>Up to 300GB 5G data for only 25€ per month*!</p>
-        </card>
+    <div class="m-2 mt-14">
+        <a href="#300gboffer">
+            <card class="flex flex-col bg-teal-600 rounded-xl p-4">
+                <h1 class="font-circleBold">The new MEGA plan!</h1>
+                <p>Up to 300GB 5G data for only 25€ per month*!</p>
+            </card>
+        </a>
     </div>
     <div class="m-2">
-        <carrousel class="flex gap-12 static">
-            <a href="#dataplans" class="border-b-2 border-red-500">mobile data</a>
-            <a href="#calls" class="border-b-2 border-red-500">calls</a>
-            <a href="#phoneplans" class="border-b-2 border-red-500">phone plans</a>
-            <a href="#ftth" class="border-b-2 border-red-500">FTTH</a>
+        <carrousel class="flex justify-evenly lg:gap-0">
+            <a href="#dataplans" class="border-b-2 border-teal-700">mobile data</a>
+            <a href="#calls" class="border-b-2 border-teal-700">calls</a>
+            <a href="#phoneplans" class="border-b-2 border-teal-700">phone plans</a>
+            <a href="#ftth" class="border-b-2 border-teal-700">FTTH</a>
         </carrousel>
     </div>
     <div class="m-2">
-        <h1 id="dataplans">Mobile data plans</h1>
-        <carrousel class="flex flex-row snap-x snap-mandatory overflow-x-auto gap-4">
+        <h1 id="dataplans" class="mb-2">Mobile data plans</h1>
+        <carrousel class="flex flex-row snap-x snap-mandatory overflow-x-auto gap-4 lg:gap-0 lg:justify-evenly">
             <card class="bg-card">
-                <h1>6GB</h1>
+                <h1 class="font-circleBold">6GB</h1>
                 <p>6GB data plan with lightning fast 5G connectivity.</p>
                 <span class="text-3xl font-bold flex mt-4">1,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
-                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>12GB</h1>
+                <h1 class="font-circleBold">12GB</h1>
                 <p>12GB data plan with lightning fast 5G connectivity.</p>
                 <span class="text-3xl font-bold flex mt-4">2,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
-                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>24GB</h1>
+                <h1 class="font-circleBold">24GB</h1>
                 <p>24GB data plan with lightning fast 5G connectivity.</p>
                 <span class="text-3xl font-bold flex mt-4">4,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
-                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>36GB</h1>
+                <h1 class="font-circleBold">36GB</h1>
                 <p>36GB data plan with lightning fast 5G connectivity.</p>
                 <span class="text-3xl font-bold flex mt-4">6,5€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
-                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>50GB</h1>
+                <h1 class="font-circleBold">50GB</h1>
                 <p>50GB data plan with lightning fast 5G connectivity.</p>
-                <span class="text-3xl font-bold flex mt-4">8€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <span class="text-3xl font-bold flex mt-4">8,-€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
                 <div class="flex justify-center mt-12">
-                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
             <card class="bg-card">
-                <h1>300GB</h1>
+                <h1 id="300gboffer" class="font-circleBold">300GB</h1>
                 <p>300GB data plan with lightning fast 5G connectivity.</p>
                 <span class="text-3xl font-bold flex mt-4">25,-€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly*</span></span>
                 <span class="text-slate-400">After 6 months, monthly rate will rise to 30,-€!</span>
                 <div class="flex justify-center bottom-0">
-                    <button type="submit" class="bg-red-400 p-3 rounded-lg" onclick="order()">Order now</button>
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
                 </div>
             </card>
         </carrousel>
     </div>
     <div class="m-2">
-        <h1 id="calls">Imagine getting a plan which only allows you to make calls 🤣</h1>
+        <h1 id="calls" class="font-circleBold">Imagine getting a plan which only allows you to make calls 🤣</h1>
         <p>All plans include a flat rate for calls inside the EU and selected member states. For calls outside the EU and selected members, you may be charged a fee of -,20ct per minute and -,05ct per SMS. RCS messages are always free.</p>
     </div>
     <div class="m-2">
-        <h1 id="phoneplans">phone plans</h1>
-        <p>coming soon...</p>
+        <h1 id="phoneplans" class="font-circleBold">phone plans</h1>
+        <div class="flex flex-row snap-x snap-mandatory overflow-x-auto gap-4 lg:gap-0 lg:justify-evenly">
+            <card class="bg-card">
+                <h1 class="font-circleBold">Smasnug S23 FE + 24GB</h1>
+                <p>Get the new Smasnug Galactic S23 FE, together with a 24GB data plan!</p>
+                <br>
+                <img class="max-h-48 lg:min-h-96 lg:max-h-96" src="https://im.chip.de/ii/1/2/6/8/5/2/6/7/2/Samsung-Galaxy-S23-FE-548b013ebf46d7bb.webp?im=AspectCrop%2Csize%3D%2816%2C9%29%2Cgravity%3DCenter%3BResize%3D%28936%2C526%29%2Caspect%3Dfit%3BBackgroundColor%2Ccolor%3Dffffff&hash=463419cccf50fb578645d674fa272372650dd1b2519f4f7af10e7c030c85b0fc" alt="">
+                <span class="text-3xl font-bold flex mt-4">35€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <div class="flex justify-center mt-14">
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
+                </div>
+            </card>
+            <card class="bg-card">
+                <h1 class="font-circleBold">Appel oPhone 15 EXPERT + 24GB</h1>
+                <p>Get the new Appel oPhone 15 EXPERT, together with a 24GB data plan!</p>
+                <img class="max-h-48 lg:min-h-96 lg:max-h-96" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-family-select?wid=4000&hei=3794&fmt=jpeg&qlt=90&.v=1692893972634" alt="">
+                <span class="text-3xl font-bold flex mt-4">55€<span class="font-normal text-base self-center ml-2 text-slate-400">monthly</span></span>
+                <div class="flex justify-center mt-14">
+                    <button type="submit" class="bg-teal-600 p-3 rounded-lg" onclick="order()">Order now</button>
+                </div>
+            </card>
+        </div>
     </div>
     <div class="m-2">
-        <h1 id="ftth">FTTH</h1>
+        <h1 id="ftth" class="font-circleBold">FTTH</h1>
         <p>Get blazing fast fibre optic internet connections for your home! Apply below to get a quote to get connected to our ever growing network!</p>
         <div class="flex flex-col ml-24">
             <span class="ml-4 font-bold mb-2 text-teal-500 text-2xl">500Mbps</span>

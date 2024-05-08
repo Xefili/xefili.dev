@@ -23,7 +23,7 @@
     </div>
     <div class="mt-4">
         <h1 id="Produkte" class="text-center inline-block font-circleBold">Produkte</h1>
-        <carrousel class="flex snap-x snap-mandatory overflow-x-auto mt-4">
+        <carrousel class="flex lg:justify-center snap-x snap-mandatory overflow-x-auto mt-4">
             <card class="carrousel flex flex-col">
                 <h1 class="ml-1 font-circleBold">AG-D1-rev1</h1>
                 <p class="ml-1">Günstig und effektiv.</p>
@@ -38,7 +38,7 @@
                 </span>
                 <div class="flex justify-center mt-4 mb-2">
                     <span class="py-1 px-2">Preis: --,--€</span>
-                    <btn class="bg-blue-500 rounded-xl py-1 px-2">Preis anfragen</btn>
+                    <button onclick="order()" type="submit" class="bg-blue-500 rounded-xl py-1 px-2">Preis anfragen</button>
                 </div>
             </card>
             <card class="carrousel flex flex-col">
@@ -55,7 +55,7 @@
                 </span>
                 <div class="flex justify-center mt-4 mb-2">
                     <span class="py-1 px-2">Preis: --,--€</span>
-                    <btn class="bg-blue-500 rounded-xl py-1 px-2">Preis anfragen</btn>
+                    <button onclick="order()" type="submit" class="bg-blue-500 rounded-xl py-1 px-2">Preis anfragen</button>
                 </div>
             </card>
             <card class="carrousel flex flex-col">
@@ -73,7 +73,7 @@
                 </span>
                 <div class="flex justify-center mt-4 mb-2">
                     <span class="py-1 px-2">Preis: --,--€</span>
-                    <btn class="bg-blue-500 rounded-xl py-1 px-2">Preis anfragen</btn>
+                    <button onclick="order()" type="submit" class="bg-blue-500 rounded-xl py-1 px-2">Preis anfragen</button>
                 </div>
             </card>
         </carrousel>
@@ -81,7 +81,7 @@
     <space class="inline-block my-4"></space>
     <div class="text-center m-2">
         <h1 id="Über uns" class="inline-block font-circleBold">Über uns</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo facilis tenetur qui id, aspernatur hic aperiam dolores neque vitae saepe voluptate! Excepturi, nesciunt. Praesentium amet illum necessitatibus recusandae. A, illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorum, aut fugit minus cupiditate officiis, rerum quibusdam eum accusantium fugiat aliquid pariatur quia sint facere eveniet! A nobis nihil voluptate!</p>
+        <p>Wir sind ein Startup aus Deutschland und spezialisieren uns auf Drohen und Flugabwehrsysteme. Alle unsere Produkte basieren auf universellen Munitionstypen, wie die Bolt und Rocket Munition.</p>
     </div>
     <div class="text-center">
         <h1 class="inline-block font-circleBold">Abkürzungen</h1>
@@ -96,4 +96,9 @@
         <p class="text-center">Made with ❤️ in Kehl, Germany!</p>
     </div>
 </body>
+<script>
+function order() {
+    alert("Dies ist nur eine Demo Webseite!\nWir verkaufen natürlich nichts.\n~ Die Airguard AG Geschäftsleitung");
+}
+</script>
 </html>

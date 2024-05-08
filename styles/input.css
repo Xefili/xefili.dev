@@ -12,10 +12,10 @@
     src: url("../assets/PlusJakartaSans-ExtraBold.ttf")format(truetype);
 }
 h2 {
-    @apply no-underline text-3xl md:text-5xl w-full content-center font-black font-headerFont;
+    @apply no-underline text-3xl md:text-5xl w-full content-center font-black;
 }
 h1, h3 {
-    @apply text-3xl md:text-5xl flex content-center w-full font-black underline font-headerFont;
+    @apply text-3xl md:text-5xl flex content-center w-full font-black underline;
 }
 .button {
     @apply p-4 bg-[#3cbe61] dark:bg-[#4cc98a] rounded-3xl w-40 cursor-pointer font-black;

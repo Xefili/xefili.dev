@@ -3,7 +3,7 @@ function displayAction(e) {
 }
 // GET blog contents
 try {
-    const response = await fetch("https://api.xefili.dev/articles/", {method:"GET"});
+    const response = await fetch("https://api.xefili.dev/articles/", {method:"GET", mode:"no-cors"});
     const jsonReponse = await response.json();
     var arrLen = jsonReponse.length;
     let i;

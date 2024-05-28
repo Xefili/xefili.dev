@@ -18,8 +18,7 @@ document.getElementById("search-input").addEventListener("input", async () => {
     var li = document.getElementsByTagName("li");
     var query = document.getElementById("search-input").value;
     console.info(query);
-    var options = {"method":"GET"}
-    var res = await fetch(`https://api.xefili.dev/articles?title_like=${query}&_limit=3`, options);
+    var res = await fetch(`https://api.xefili.dev/search?query=${query}&limit=3`, {method:"GET", mode:"no-cors"});
     const content = await res.json();
     console.info(content);
     let i;

@@ -3,7 +3,7 @@ var id = URLparams.replace("?","").split("=")[1];
 console.info(`Detected article ID ${id}`)
 
 try {
-    var res = await fetch(`https://api.xefili.dev/articles/${id}`, {"method":"GET"});
+    var res = await fetch(`https://api.xefili.dev/articles/${id}`, {"method":"GET", "mode":"cors"});
     var jsonified = await res.json();
     var articleTitle = jsonified.title;
     var articleContent = jsonified.content;

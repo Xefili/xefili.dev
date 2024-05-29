@@ -3,12 +3,13 @@ function displayAction(e) {
 }
 // GET blog contents
 try {
-    const response = await fetch("https://api.xefili.dev/articles/", {method:"GET", mode:"no-cors"});
-    const jsonReponse = await response.json();
+    const response = await fetch("https://api.xefili.dev/articles/", {method:"GET", mode:"cors"});
+    const res = await response.json();
+    const jsonReponse = await res.reverse();
     var arrLen = jsonReponse.length;
     let i;
     let k = 1;
-    for(i=arrLen-1;i>arrLen-5;i--) {
+    for(i=0; i!=arrLen; i++) {
         console.log(i);
         document.getElementById(`artTitle${k}`).innerHTML = jsonReponse[i].title;
         document.getElementById(`artText${k}`).innerHTML = jsonReponse[i].content;

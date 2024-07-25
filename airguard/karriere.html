@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/airguard.svg">
     <link rel="stylesheet" href="../styles/build.css">
     <title>Airguard AG - Karriere</title>
 </head>
-<body class="font-circle">
+<body class="font-circle overflow-x-hidden">
     <div class="flex flex-row h-12 justify-between">
         <div class="flex flex-row">
             <logo class="self-center"><img class="h-8 p-1" src="../assets/airguard.svg" alt=""></logo>
@@ -16,15 +17,32 @@
             <a class="self-center p-2" href="index.html">Zurück</a>
         </div>
     </div>
-    <div class="m-2">
-        <card class="flex flex-col">
-            <h1 class="font-circleBold">Mechatroniker/in</h1>
-            <p>Starte mit uns deine Karriere als Mechatroniker durch!</p>
-            <img class="mb-4" src="../assets/Vector.svg" alt="">
-            <div class="flex justify-center">
-                <button onclick="alert('Es gibt kein Entgeld! Falls du doch interresse hast, schreib eine Email an ole.brodbeck@icloud.com')" class="p-2 rounded-lg bg-blue-400" type="submit">Kontakt</button>
-            </div>
-        </card>
+    <img src="../assets/Vector.svg" alt="" class="fixed z-0 lg:w-1/2 w-full -right-32 -bottom-32 blur-xl">
+    <div class="relative z-10">
+        <h1 class="block text-center">Mit AirGuard durchstarten!</h1>
+        <cardbox class="flex flex-col lg:flex-row w-full justify-evenly">
+            <card class="p-2 m-2 border-b-2 border-slate-600 lg:border-2 lg:rounded-lg lg:w-1/4 bg-white/50">
+                <h2>Mechatroniker/in</h2>
+                <p>Mache die Ausbildung zum Mechatroniker bei AirGuard! Du benötigst nur ein gutes Abitur, und ein Verständnis für technische Maschinen und Physik.<br>Falls du Interesse haben solltest, melde dich hier be uns:</p>
+                <div class="flex justify-center">
+                    <button class="py-2 px-4 bg-emerald-500 rounded-md" onclick="alert('Diese Seite ist nur Spaß, hier gibts nix ;)\n- Die AirGuard AG Geschäftsleitung')" type="submit">Kontakt</button>
+                </div>
+            </card>
+            <card class="p-2 m-2 border-b-2 border-slate-600 lg:border-2 lg:rounded-lg lg:w-1/4 bg-white/50">
+                <h2>Schweißer/in</h2>
+                <p>Starte deine Ausbildung zum Schweißer bei AirGuard! Du benötigst gute Deutsch und Englisch Kenntnisse, sowie Interesse an der Arbeit. Du startest mit 1800€ im 1. Lehrjahr mit großer Übernahmechance! Bei Interesse, melde dich gerne bei uns:</p>
+                <div class="flex justify-center">
+                    <button class="py-2 px-4 bg-emerald-500 rounded-md" onclick="alert('Diese Seite ist nur Spaß, hier gibts nix ;)\n- Die AirGuard AG Geschäftsleitung')" type="submit">Kontakt</button>
+                </div>
+            </card>
+            <card class="p-2 m-2 border-b-2 border-slate-600 lg:border-2 lg:rounded-lg lg:w-1/4 bg-white/50">
+                <h2>Software Engineer B. eng.</h2>
+                <p>Starte dein duales Studium zum Software Engineer bei AirGuard! In 4 Jahren studierst du Software Engineering an der Cloudify University und erhälst nebenbei wertvolle Arbeitserfahrung. Deine Aufgaben nach dem Studium sind; Dronenkontrollsysteme programmieren, Visuelle Interfaces für weitere Kontrollsysteme zu entwickeln und viele weitere Bereiche. Du benötigst hierfür ein gutes Abitur (min. 2,4), sowie Vorkenntnisse im Bereich Informatik. Du solltest ebenfalls ein gutes logisches Denkvermögen besitzen, sowie teamfähig sein. Während des Studiums erhälst du von uns einen festen monatlichen Lohn von ~970€ sowie 400€ extra während der praktischen Ausbildung.<br>Bei Interesse, melde dich bei uns:</p>
+                <div class="flex justify-center">
+                    <button class="py-2 px-4 bg-emerald-500 rounded-md" onclick="alert('Diese Seite ist nur Spaß, hier gibts nix ;)\n- Die AirGuard AG Geschäftsleitung')" type="submit">Kontakt</button>
+                </div>
+            </card>
+        </cardbox>
     </div>
 </body>
 </html>

@@ -38,4 +38,10 @@ box {
 .bg-card {
     @apply border-2 border-slate-200 min-w-72 min-h-64 rounded-lg p-2 snap-center;
 }
+card {
+    @apply bg-gray-200 hover:bg-gray-300 dark:hover:bg-[#333333] dark:bg-[#1e1f20] flex flex-col dark:text-white w-auto lg:w-72 h-48 lg:h-72 p-4 m-2 rounded-xl;
+    >h3 {
+        @apply no-underline text-xl;
+    }
+}
 }

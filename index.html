@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto+Flex:opsz,wdth,wght@8..144,112.5,400;8..144,112.5,700;8..144,112.5,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/build.css"/>
+    <link rel="stylesheet" href="styles/animations.css">
     <link rel="icon" type="image/x-icon" href="assets/Bucket Helper.svg">
     <title>Home - Xefili.dev</title>
 </head>
-<body class="dark:bg-[#2c2c2c] font-circle">
-    <pageHead class="fixed z-50 block h-12 w-full bg-[#202020] shadow-md shadow-[#202020] text-white">
+<body class="dark:bg-[#131313] font-circle">
+    <pageHead class="fixed z-50 block h-12 w-full shadow-md dark:text-white">
         <leftDivision class="h-12 inline-grid grid-cols-[1fr 1fr] gap-2 justify-center items-center">
             <logo><img class="col-span-1 w-8 h-8 ml-2" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
             <logoText class="col-start-2">
@@ -22,8 +22,8 @@
             </logoText>
         </leftDivision>
         <navBar class="flex float-right h-12 items-center justify-evenly">
-            <a href="index.html">
-                <home class="flex items-center font-circleBold mr-8 md:before:content-['Home⠀']"><span class="material-symbols-outlined">home</span></home>
+            <a href="https://api.xefili.dev/v1/">
+                <home class="flex items-center font-circleBold mr-8 md:before:content-['API⠀']"><span class="material-symbols-outlined">api</span></home>
             </a>
             <a href="blog.html">
                 <blog class="flex items-center font-circleBold mr-8 md:before:content-['Blog⠀']"><span class="material-symbols-outlined">chat</span></Blog>
@@ -37,60 +37,51 @@
         </navBar>
     </pageHead>
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
-    <pageContent class="flex flex-col absolute mt-16 z-10 content-center w-full dark:bg-[#2c2c2c] dark:text-white">
-        <h1 class="w-full text-center justify-center">Glad you made it 👋<br>Welcome to Xefili.dev!</h1>
-        <cSpacer class="h-12"></cSpacer>
-        <gridDivision class="grid justify-items-center items-center min-h-96 gap-4 md:grid-cols-[24rem,32rem] md:justify-center md:gap-x-20">
-            <imageDivision class="md:col-span-1 md:row-span-2 md:scale-150 aspect-[inherit]">
-                <img src="assets/blog.svg" alt="Blog Image"/>
-            </imageDivision>
-            <textDivision class="text-center md:col-start-2">
-                <h2>Find out what's new<br>on Xefili.dev</h2>
-                <span>Take a look at what's happening right now on Xefili.dev!</span>
-            </textDivision>
-                <button class="button md:col-start-2 md:col-end-3 md:mt-0" type="submit" onclick="window.location.href='/blog.html'" id="divisionButton">To Blog</button>
-        </gridDivision>
-
-        <cSpacer class="h-12"></cSpacer>
-
-        <gridDivision class="grid justify-items-center items-center min-h-96 gap-4 md:grid-cols-[24rem,32rem] md:justify-center md:gap-x-20">
-            <imageDivision class="md:col-span-1 md:row-span-2 md:scale-150 aspect-[inherit]">
-                <img id="blogImage" src="assets/documentation.svg" alt="Blog Image"/>
-            </imageDivision>
-            <textDivision class="text-center md:col-start-2">
-                <h2>Got a problem?</h2>
-                <span>Read the Bucket Helper Documentation to get help!</span>
-            </textDivision>
-            <button class="button" type="submit" onclick="window.location.href='learn.xefili.dev'" id="divisionButton">To Documentation</button>
-        </gridDivision>
-
-        <cSpacer class="h-12"></cSpacer>
-
-        <gridDivision class="grid justify-items-center items-center min-h-96 gap-4 md:grid-cols-[24rem,32rem] md:justify-center md:gap-x-20">
-            <imageDivision class="md:col-span-1 md:row-span-2 md:scale-150 aspect-[inherit]">
-                <img id="blogImage" src="assets/tools.svg" alt="Blog Image"/>
-            </imageDivision>
-            <textDivision class="text-center md:col-start-2">
-                <h2>The Tools I use!</h2>
-                <span>My personal collection of handy tools and websites for programming and troubleshooting.</span>
-            </textDivision>
-            <button class="button" type="submit" onclick="window.location.href='/tools.html'" id="divisionButton">To Tool Collection</button>
-        </gridDivision>
-
-        <cSpacer class="h-12"></cSpacer>
-        
-        <div class="text-center">
-            <h2 class="md:mb-8">Want to host your page here?</h2>
-            <p>Contact me on Dicord @ uphillbucket687</p>
+    <pageContent class="grid grid-cols-1 absolute mt-16 w-full justify-items-center p-4">
+        <div class="mb-4">
+            <h1 class="bg-clip-text bg-gradient-to-br from-emerald-500 to-cyan-600 text-transparent text-left">Welcome to Xefili.dev ❤️</h1>
+            <h2 class="text-gray-600">Check out my personal portfolio:</h2>
         </div>
-
-        <cSpacer class="h-12"></cSpacer>
-        <heart class="block text-center mt-12">Handcrafted with ❤️ in Germany</heart>
+        <cards class="flex flex-wrap justify-center">
+            <a href="blog.html">
+                <card class="relative">
+                    <h3>Blog</h3>
+                    <p>A small blog I irregularily write stuff in. Check it out for updates! Should it be broken, wait a few days until I turn the server back on.</p>
+                    <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">chat</e></pop>
+                </card>
+            </a>
+            <a href="https://api.xefili.dev/v1/">
+                <card class="relative">
+                    <h3>API</h3>
+                    <p>A handy API to handle search for the blog and to host stats and articles. Check it out, usage is free under fair use.</p>
+                    <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">api</e></pop>
+                </card>
+            </a>
+            <a href="https://beta.xefili.dev/">
+                <card class="relative">
+                    <h3>Documentation</h3>
+                    <p>A never finished project, written with AstroJS. Who knows whether I will finish with it...</p>
+                    <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">description</e></pop>
+                </card>
+            </a>
+            <a href="/tools/index.html">
+                <card class="relative">
+                    <h3>Tools</h3>
+                    <p>A small collections of helpful tools and inspiration, which helped me create this website.</p>
+                    <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">construction</e></pop>
+                </card>
+            </a>
+        </cards>
     </pageContent>
+    <div class="flex justify-center w-full bottom-0 mb-2 absolute">
+        <div class="dark:text-white flex lg:w-4/5 w-full justify-evenly">
+            <a href="">Contact</a>
+            <a href="">Feedback</a>
+            <a href="">Legal</a>
+        </div>
+    </div>
 </body>
 <script>
-const handleZoom = () => {
-  document.body.style.zoom = `${Math.round(100 / window.devicePixelRatio)}%`
-}
+console.log("Hey, stop looking at the console ;) none of your business!");
 </script>
 </html>

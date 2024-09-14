@@ -1,3 +1,5 @@
+const autoprefixer = require('autoprefixer');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html", "./docs/*.html", "./tools/*.html", "./blog/*.html", "./blog/*.js", "./zeus/*.html", "./airguard/*.html", "./bgmobile/*.html", "./pane/*.html"], //narrow down to speed up build times
@@ -12,5 +14,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    autoprefixer
+  ],
 }

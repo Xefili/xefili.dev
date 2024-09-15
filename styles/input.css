@@ -44,4 +44,21 @@ card {
         @apply no-underline text-xl;
     }
 }
+@keyframes gradientSwish {
+    0% {
+        @apply bg-gradient-to-r from-emerald-500 to-cyan-600;
+    }
+    33% {
+        @apply bg-gradient-to-b from-emerald-500 to-cyan-600;;
+    }
+    66% {
+        @apply bg-gradient-to-l from-emerald-500 to-cyan-600;;
+    }
+    100% {
+        @apply bg-gradient-to-t from-emerald-500 to-cyan-600;
+    }
+}
+#gradientSwish {
+    @apply animate-[gradientSwish_500ms_linear]
+}
 }

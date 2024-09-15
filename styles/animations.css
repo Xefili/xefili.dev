@@ -7,6 +7,6 @@
     }
 }
 
-cards {
+cards, pagehead {
     animation: 1s slideIn;
 }

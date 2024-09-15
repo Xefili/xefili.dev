@@ -14,8 +14,8 @@
     <link rel="icon" type="image/x-icon" href="assets/Bucket Helper.svg">
     <title>Home - Bucket Lounge</title>
 </head>
-<body class="dark:bg-[#2c2c2c] font-circle">
-    <pageHead class="fixed z-50 block h-12 w-full bg-[#202020] shadow-md shadow-[#202020] text-white">
+<body class="dark:bg-[#131313] font-circle">
+    <pageHead class="fixed z-50 block h-12 w-full shadow-md dark:text-white">
         <leftDivision class="h-12 inline-grid grid-cols-[1fr 1fr] gap-2 justify-center items-center">
             <logo><img class="col-span-1 w-8 h-8 ml-2" src="../assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
             <logoText class="col-start-2">
@@ -23,44 +23,36 @@
             </logoText>
         </leftDivision>
         <navBar class="flex float-right h-12 items-center justify-evenly">
-            <a href="index.html">
-                <home class="flex items-center font-circleBold mr-8 md:before:content-['Home⠀']"><span class="material-symbols-outlined">home</span></home>
+            <a href="https://api.xefili.dev/v1/">
+                <home class="flex items-center font-circleBold mr-8 md:before:content-['API⠀']"><span class="material-symbols-outlined">api</span></home>
             </a>
-            <a href="blog.html">
+            <a href="../blog.html">
                 <blog class="flex items-center font-circleBold mr-8 md:before:content-['Blog⠀']"><span class="material-symbols-outlined">chat</span></Blog>
             </a>
             <a href="https://xefili.dev/docs">
                 <docs class="flex items-center font-circleBold mr-8 md:before:content-['Documentation⠀']"><span class="material-symbols-outlined">description</span></Docs>
             </a>
-            <a href="tools.html">
-                <tools class="flex items-center font-circleBold mr-8 md:before:content-['Tools⠀']"><span class="material-symbols-outlined">construction</span></search>
+            <a href="https://xefili.dev/">
+                <tools class="flex items-center font-circleBold mr-8 md:before:content-['Home⠀']"><span class="material-symbols-outlined">home</span></search>
             </a>
         </navBar>
     </pageHead>
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
-    <pageContent class="flex justify-center">
-        <carroussel class="mt-24 snap-x snap-mandatory overflow-x-auto flex flex-row w-2/3 text-white">
-            <card class="lg:m-12 border-2 rounded-lg p-4 border-[#202020] m-4 min-h-24 min-w-[30rem] snap-center flex flex-col items-center">
-                <img class="max-h-48 min-h-48 max-w-48 min-w-48" src="../assets/vscode.svg" alt="">
-                <h1>Visual Studio Code</h1>
-                <p></p>
-            </card>
-            <card class="lg:m-12 border-2 rounded-lg p-4 border-[#202020] m-4 min-h-24 min-w-[30rem] snap-center flex flex-col items-center">
-                <img class="max-h-48 min-h-48 max-w-48 min-w-48" src="../assets/invertocat-white.svg" alt="">
-                <h1>Github</h1>
-                <p></p>
-            </card>
-            <card class="lg:m-12 border-2 rounded-lg p-4 border-[#202020] m-4 min-h-24 min-w-[30rem] snap-center flex flex-col items-center">
-                <img class="max-h-48 min-h-48 max-w-48 min-w-48" src="../assets/cflogo.webp" alt="">
-                <h1>Cloudflare & Pages</h1>
-                <p></p>
-            </card>
-            <card class="lg:m-12 border-2 rounded-lg p-4 border-[#202020] m-4 min-h-24 min-w-[30rem] snap-center flex flex-col items-center">
-                <img class="max-h-48 min-h-48 max-w-48 min-w-48" src="../assets/tailwind.svg" alt="">
-                <h1>Tailwind</h1>
-                <p></p>
-            </card>
-        </carroussel>
+    <pageContent class="grid grid-cols-1 absolute mt-16 w-full justify-items-center p-4">
+        <div class="flex flex-row justify-center gap-8 bg-emerald-400/50 p-2 min-h-36 items-center w-full">
+            <e class="material-symbols-outlined !text-6xl bg-emerald-500 bg-clip-text text-transparent">system_update</e>
+            <div>
+                <h1 class="text-3xl no-underline">This page is getting a new look!</h1>
+                <p>With the new design being introduced, this page will be affected aswell. For now, it's under contruction for the forseeable future. Check back soon for changes!</p>
+            </div>
+        </div>
     </pageContent>
+    <div class="flex justify-center w-full bottom-0 mb-2 absolute">
+        <div class="dark:text-white flex lg:w-4/5 w-full justify-evenly">
+            <a href="">Contact</a>
+            <a href="">Feedback</a>
+            <a href="">Legal</a>
+        </div>
+    </div>
 </body>
 </html>

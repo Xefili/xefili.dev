@@ -1,0 +1,12 @@
+@keyframes slideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+cards {
+    animation: 1s slideIn;
+}

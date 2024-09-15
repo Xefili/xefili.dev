@@ -41,12 +41,16 @@
             <h1 class="bg-clip-text bg-gradient-to-br from-emerald-500 to-cyan-600 text-transparent text-left">Blog</h1>
             <h2 class="text-gray-600">Read up on the latest news:</h2>
         </div>
-        <div class="flex flex-row text-center items-center w-full justify-center gap-8 p-2 min-h-36 bg-red-400/50">
-            <e class="material-symbols-outlined font-black bg-red-500/75 bg-clip-text text-transparent !text-6xl">block</e>
+        <div class="flex flex-row text-center items-center w-full justify-center gap-8 p-2 min-h-36 bg-yellow-400/50 mb-4">
+            <e class="material-symbols-outlined font-bold bg-yellow-500/75 bg-clip-text text-transparent !text-6xl">bug_report</e>
             <div class="dark:text-white">
-                <h1 class="no-underline text-3xl">Blog unavailable..</h1>
-                <p>Due to time constraints, the blog webpage will be down. To read past articles, head to <a class="underline underline-offset-4" href="https://xefili.dev/blog/displayArticle.html">the archive</a>. The api may also be queried for blog posts under the <code>/articles</code> endpoint.</p>
+                <h1 class="no-underline text-3xl">Blog is still in beta..</h1>
+                <p>The blog has gotten a new design, but the backend and frontend may behave incorrectly at the moment. Report issues on <a href="https://github.com/Xefili/xefili.dev/issues" class="underline underline-offset-4">Github</a></p>
             </div>
+        </div>
+        <div class="flex flex-col lg:grid lg:grid-cols-2 dark:text-white w-full lg:w-4/5">
+            <a alt="" class="border-2 border-gray-400 rounded-xl p-2 h-72 overflow-hidden" href="https://xefili.dev/blog/read.html?=0"><lgCard id="latest"></lgCard></a>
+            <div id="stories" class="grid grid-cols-1 grid-rows-[repeat(24rem)] gap-4 p-2"></div>
         </div>
     </pageContent>
     <div class="flex justify-center w-full bottom-0 mb-2 absolute">
@@ -57,4 +61,5 @@
         </div>
     </div>
 </body>
+<script type="module" src="script.js"></script>
 </html>

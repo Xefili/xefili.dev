@@ -42,4 +42,4 @@ npm install && npx tailwindcss -i styles/input.css -o styles/build.css --minify
 
 # Documentation
 
-The official docs are moving to the Astro framework. This allows the use of MDX files to speed up writing the documentation. The repo will be available (here)[https://github.com/xefili/documentation]
+The full documentation can be viewed [here](https://xefili.dev/docs/index.html)

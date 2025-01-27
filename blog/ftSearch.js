@@ -2,12 +2,19 @@ const div = document.getElementById("generator");
 
 let i;
 var raw = await fetch("https://api.xefili.dev/articles", {"method":"GET"})
-var jsonResponse = await raw.json()
+let raw2 = await raw.json()
+var jsonResponse = await raw2.reverse();
 
 for(i=0;i<jsonResponse.length+1;i++) {
     try {
         let content = jsonResponse[i];
-        div.appendChild(document.createElement("box")).innerHTML += `<h1 class="dark:text-white" id="${content.title}">${content.title}</h1><text class="dark:text-white">${content.content}</text>`
+        let box = document.createElement("box")
+        box.innerHTML += `<h1 class="dark:text-white" id="${content.title}">${content.title}</h1><p class="dark:text-white">${content.content}</p>`;
+        if(i % 2 != 0) {
+            box.classList.add("bg-light-200", "dark:bg-dark-200");
+        }
+        box.classList.add("p-4", "m-4", "rounded-2xl", "block");
+        div.appendChild(box);
     } catch(e) {
         console.log("");
     }

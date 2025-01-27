@@ -1,6 +1,4 @@
-@import '../node_modules/tailwindcss/base.css';
-@import '../node_modules/tailwindcss/components.css';
-@import '../node_modules/tailwindcss/utilities.css';
+@import "tailwindcss";
 
 @layer base {
 @font-face {
@@ -11,37 +9,34 @@
     font-family: "Plus Jakarta Sans Extrabold";
     src: url("../assets/PlusJakartaSans-ExtraBold.ttf")format(truetype);
 }
-h2 {
-    @apply no-underline text-3xl md:text-5xl w-full content-center font-circleBold;
+
+@theme {
+    --font-circle: "Plus Jakarta Sans", sans-serif;
+    --font-circleBold: "Plus Jakarta Sans Extrabold", sans-serif;
+    --font-sans: "Roboto Flex", "system-ui", sans-serif;
+    --font-mono: "Jetbrains Mono", monospace;
+    
+    --color-gradient-100: #4e82ee;
+    --color-gradient-200: #a371bf;
+    --color-gradient-150: #d96570;
+
+    --color-dark-100: #131313; /* Use for background */
+    --color-dark-200: #232323; /* Use for emphasis */
+    --color-dark-300: #333333; /* Use for hover */
+
+    --color-light-100: #F5F5F5; /* Use for background */
+    --color-light-200: #E5E5E5; /* Use for emphasis */
+    --color-light-300: #D5D5D5; /* Use for hover */
 }
-h1, h3 {
-    @apply text-3xl md:text-5xl flex content-center w-full font-circleBold underline;
+
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-circleBold;
 }
-.button {
-    @apply p-3 bg-cyan-500 hover:bg-cyan-600 rounded-lg w-40 cursor-pointer font-circleBold;
-}
-.grad {
-    @apply bg-gradient-to-br from-[#299300] via-[#009274] to-[#0088BD] bg-clip-text;
+.gradient-text {
+    @apply bg-gradient-to-r from-gradient-100 via-gradient-150 to-gradient-200 bg-clip-text text-transparent;
 }
 e.material-symbols-outlined {
     @apply text-3xl;
-}
-.a {
-    @apply p-4 no-underline;
-}
-box {
-    @apply md:grid md:grid-cols-[1fr_5fr] md:w-4/5 md:mb-12;
-}
-.carrousel {
-    @apply border-2 border-slate-500 min-w-72 snap-center mx-4 rounded-lg font-circle;
-}
-.bg-card {
-    @apply border-2 border-slate-200 min-w-72 min-h-64 rounded-lg p-2 snap-center;
-}
-card {
-    @apply bg-gray-200 hover:bg-gray-300 dark:hover:bg-[#333333] dark:bg-[#1e1f20] flex flex-col dark:text-white w-auto lg:w-72 h-48 lg:h-72 p-4 m-2 rounded-xl;
-    >h3 {
-        @apply no-underline text-xl;
-    }
 }
 }

@@ -13,8 +13,8 @@
     <link rel="icon" type="image/x-icon" href="assets/Bucket Helper.svg">
     <title>Home - Xefili.dev</title>
 </head>
-<body class="dark:bg-[#131313] font-circle">
-    <pageHead class="fixed z-50 block h-12 w-full shadow-md dark:bg-[#131313] bg-white dark:text-white">
+<body class="dark:bg-dark-100 bg-light-100 font-circle">
+    <pageHead class="fixed z-50 block h-12 w-full shadow-md dark:bg-dark-100 bg-light-100 dark:text-white">
         <leftDivision class="h-12 inline-grid grid-cols-[1fr 1fr] gap-2 justify-center items-center">
             <logo><img class="col-span-1 w-8 h-8 ml-2" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
             <logoText class="col-start-2">
@@ -31,7 +31,7 @@
             <a href="https://xefili.dev/docs">
                 <docs class="flex items-center font-circleBold mr-8 md:before:content-['Documentation⠀']"><span class="material-symbols-outlined">description</span></Docs>
             </a>
-            <a href="tools.html">
+            <a href="/tools/index.html">
                 <tools class="flex items-center font-circleBold mr-8 md:before:content-['Tools⠀']"><span class="material-symbols-outlined">construction</span></search>
             </a>
         </navBar>
@@ -39,42 +39,43 @@
     <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
     <pageContent class="grid grid-cols-1 absolute mt-16 w-full justify-items-center p-4">
         <div class="mb-4">
-            <h1 class="bg-clip-text bg-gradient-to-br from-emerald-500 to-cyan-600 text-transparent text-left">Welcome to Xefili.dev ❤️</h1>
-            <h2 class="text-gray-600">Check out my personal portfolio:</h2>
+            <h1 class="gradient-text text-left text-4xl">Welcome to Xefili.dev ❤️</h1>
+            <h2 class="text-gray-600 text-2xl">Check out my personal portfolio:</h2>
         </div>
-        <cards class="flex flex-wrap justify-center">
+        <cards class="flex flex-wrap justify-evenly lg:w-2/3 gap-4">
             <a href="blog.html">
-                <card class="relative">
-                    <h3>Blog</h3>
+                <card class="relative bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300 hover:bg-light-300 flex flex-col w-auto sm:w-72 h-52 p-4 dark:text-white rounded-2xl">
+                    <h3 class="text-2xl">Blog</h3>
                     <p>A small blog I irregularily write stuff in. Check it out for updates! Should it be broken, wait a few days until I turn the server back on.</p>
                     <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">chat</e></pop>
                 </card>
             </a>
             <a href="https://api.xefili.dev/v1/">
-                <card class="relative">
-                    <h3>API</h3>
+                <card class="relative bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300 hover:bg-light-300 flex flex-col w-auto sm:w-72 h-52 p-4 dark:text-white rounded-2xl">
+                    <h3 class="text-2xl">API</h3>
                     <p>A handy API to handle search for the blog and to host stats and articles. Check it out, usage is free under fair use.</p>
                     <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">api</e></pop>
                 </card>
             </a>
             <a href="https://beta.xefili.dev/">
-                <card class="relative">
-                    <h3>Documentation</h3>
+                <card class="relative bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300 hover:bg-light-300 flex flex-col w-auto sm:w-72 h-52 p-4 dark:text-white rounded-2xl">
+                    <h3 class="text-2xl">Documentation</h3>
                     <p>Full developer documentation, available in 3 languages. Includes API documentation.</p>
                     <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">description</e></pop>
                 </card>
             </a>
             <a href="/tools/index.html">
-                <card class="relative">
-                    <h3>Tools</h3>
+                <card class="relative bg-light-200 dark:bg-dark-200 dark:hover:bg-dark-300 hover:bg-light-300 flex flex-col w-auto sm:w-72 h-52 p-4 dark:text-white rounded-2xl">
+                    <h3 class="text-2xl">Tools</h3>
                     <p>A small collections of helpful tools and inspiration, which helped me create this website.</p>
                     <pop class="bg-white dark:text-white dark:bg-[#131313] rounded-full px-3 py-2 w-fit absolute bottom-0 right-0 m-4"><e class="material-symbols-outlined">construction</e></pop>
                 </card>
             </a>
         </cards>
+        <spacer class="block my-4 w-full h-1"></spacer>
     </pageContent>
-    <div class="flex justify-center w-full fixed bottom-0">
-        <div class="dark:text-white flex lg:w-4/5 w-full justify-evenly dark:bg-[#131313]/70 backdrop-blur-xl p-2 mt-4">
+    <div class="flex justify-center w-full fixed bottom-0 backdrop-blur-xl">
+        <div class="dark:text-white flex lg:w-4/5 w-full justify-evenly p-2 mt-4">
             <a href="">Contact</a>
             <a href="">Feedback</a>
             <a href="">Legal</a>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link Tags-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto+Flex:opsz,wdth,wght@8..144,112.5,400;8..144,112.5,700;8..144,112.5,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/build.css"/>
+    <link rel="icon" type="image/x-icon" href="assets/Bucket Helper.svg">
+    <title>Home - Bucket Lounge</title>
+</head>
+<body class="dark:bg-dark-100 bg-light-100 font-circle">
+    <pageHead class="fixed z-50 block h-12 w-full shadow-md dark:bg-dark-100 bg-light-100 dark:text-white">
+        <leftDivision class="h-12 inline-grid grid-cols-[1fr 1fr] gap-2 justify-center items-center">
+            <logo><img class="col-span-1 w-8 h-8 ml-2" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo"></logo>
+            <logoText class="col-start-2">
+                <span class="font-circleBold font-black">Xefili.dev</span>
+            </logoText>
+        </leftDivision>
+        <navBar class="flex float-right h-12 items-center justify-evenly">
+            <a href="https://api.xefili.dev/v1/">
+                <home class="flex items-center font-circleBold mr-8 md:before:content-['API⠀']"><span class="material-symbols-outlined">api</span></home>
+            </a>
+            <a href="blog.html">
+                <blog class="flex items-center font-circleBold mr-8 md:before:content-['Blog⠀']"><span class="material-symbols-outlined">chat</span></Blog>
+            </a>
+            <a href="https://xefili.dev/docs">
+                <docs class="flex items-center font-circleBold mr-8 md:before:content-['Documentation⠀']"><span class="material-symbols-outlined">description</span></Docs>
+            </a>
+            <a href="https://xefili.dev/">
+                <tools class="flex items-center font-circleBold mr-8 md:before:content-['Home⠀']"><span class="material-symbols-outlined">home</span></search>
+            </a>
+        </navBar>
+    </pageHead>
+    <!-- Please do not put site content in the <body> tags! Always put site content in <pageContent> tags.-->
+    <pageContent class="grid grid-cols-1 absolute mt-16 w-full justify-items-center p-4">
+        <div>
+            <h1 class="text-4xl text-left gradient-text">Tools</h1>
+            <h2 class="text-2xl text-gray-600">Here is an overview of all the tools and programs I use</h2>
+        </div>
+        <div class="flex flex-col justify-center items-center w-full">
+            <div class="lg:grid lg:grid-cols-5 lg:grid-rows-2 gap-4 lg:w-4/5 flex flex-col">
+                <div class="flex flex-col sm:grid grid-cols-2 col-span-2 bg-light-200 dark:bg-dark-200 p-2 rounded-2xl">
+                    <img class="w-4/5 justify-self-center self-center" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="">
+                    <div class="dark:text-white">
+                        <h2>Visual Studio Code</h2>
+                        <p>I use Visual Studio Code to write the main code for the website.</p>
+                        <p class="mt-1">For TailwindCSS support and IntelliSense, I also use their extension which really helps finding the correct utility class names.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:grid grid-cols-2 col-span-2 bg-light-200 dark:bg-dark-200 p-2 rounded-2xl">
+                    <img class="w-4/5 justify-self-center self-center" src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="">
+                    <div class="dark:text-white">
+                        <h2>TailwindCSS</h2>
+                        <p>All styling is done through TailwindCSS. This simplifies development and reduces massive CSS files. Okay, the CSS file is massive, but it could very well be even more massive.</p>
+                        <p class="mt-1">As for the little animations on the main page, they are plain CSS animations.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:grid grid-cols-2 col-start-2 col-span-2 bg-light-200 dark:bg-dark-200 p-2 rounded-2xl">
+                    <div>
+                        <img class="dark:hidden block w-4/5 justify-self-center self-center" src="assets/invertocat.svg" alt="">
+                        <img class="dark:block hidden w-4/5 justify-self-center self-center" src="assets/invertocat-white.svg" alt="">
+                    </div>
+                    <div class="dark:text-white">
+                        <h2>Github</h2>
+                        <p>To keep track of changes, I use Github. It integrates great with Visual Studio Code and makes it easy to keep the site current, since the Cloudflare Workers & Pages system keeps rebuilding my Tailwind files every time there is a push to the repo.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:grid grid-cols-2 col-span-2 bg-light-200 dark:bg-dark-200 p-2 rounded-2xl">
+                    <img class="w-4/5 justify-self-center self-center" src="assets/cflogo.webp" alt="">
+                    <div class="dark:text-white">
+                        <h2>Cloudflare</h2>
+                        <p>Domain Management and Registration is done with Cloudflare. They offer all-in-one DNS management and tunneling services with their Zero Trust platform. Cloudflare Tunnels connect the API to the world without me having to expose my non-static IP address to the internet.</p>
+                        <p class="mt-1">The website is also hosted by CLoudflare with CF Workers & Pages. It continously pulls new files from the Github repo and rebuilds the CSS file. All without any human intervention!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <spacer class="block my-4 w-full h-1"></spacer>
+    </pageContent>
+    <div class="flex justify-center w-full fixed bottom-0 backdrop-blur-xl">
+        <div class="dark:text-white flex lg:w-4/5 w-full justify-evenly p-2 mt-4">
+            <a href="https://xefili.dev/misc/contact.html">Contact</a>
+            <a href="https://xefili.dev/misc/feedback.html">Feedback</a>
+            <a href="https://xefili.dev/misc/legal.html">Legal</a>
+        </div>
+    </div>
+</body>
+</html>

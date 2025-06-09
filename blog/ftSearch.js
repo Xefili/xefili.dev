@@ -1,9 +1,9 @@
 const div = document.getElementById("generator");
 
 let i;
-var raw = await fetch("https://api.xefili.dev/articles", {"method":"GET"})
+let raw = await fetch("https://api.xefili.dev/articles", {"method":"GET"})
 let raw2 = await raw.json()
-var jsonResponse = await raw2.reverse();
+let jsonResponse = await raw2.reverse();
 
 for(i=0;i<jsonResponse.length+1;i++) {
     try {
@@ -21,16 +21,40 @@ for(i=0;i<jsonResponse.length+1;i++) {
 }
 
 document.getElementById("search-input").addEventListener("input", async () => {
-    var ul = document.getElementById("search-ul");
-    var li = document.getElementsByTagName("li");
-    var query = document.getElementById("search-input").value;
-    console.info(query);
-    var res = await fetch(`https://api.xefili.dev/search?query=${query}&limit=3`, {method:"GET", mode:"cors"});
+    let ul = document.getElementById("search-ul");
+    let li = document.getElementsByTagName("li");
+    let query = document.getElementById("search-input").value;
+
+    let res = await fetch(`https://api.xefili.dev/search?query=${query}&limit=3`, {method:"GET", mode:"cors"});
     const content = await res.json();
-    console.info(content);
+
+
     let i;
-    for(i=0;i<li.length+1;i++) {
-        li[i].getElementsByTagName("a")[0].innerHTML = `${content[i].item.title}`;
-        li[i].getElementsByTagName("a")[0].setAttribute("href", `#"${content[i].item.title}"`);
+    if(content.length == 3) {
+        for(i=0;i<3;i++) {
+            li[i].getElementsByTagName("a")[0].innerHTML = `${content[i].item.title}`;
+            li[i].getElementsByTagName("a")[0].setAttribute("href", `#"${content[i].item.title}"`);
+        }
+    }
+    if(content.length == 2) {
+        for(i=0;i<2;i++) {
+            li[i].getElementsByTagName("a")[0].innerHTML = `${content[i].item.title}`;
+            li[i].getElementsByTagName("a")[0].setAttribute("href", `#"${content[i].item.title}"`);
+        }
+        li[2].getElementsByTagName("a")[0].innerHTML = "";
+    }
+    if(content.length == 1) {
+        for(i=0;i<1;i++) {
+            li[i].getElementsByTagName("a")[0].innerHTML = `${content[i].item.title}`;
+            li[i].getElementsByTagName("a")[0].setAttribute("href", `#"${content[i].item.title}"`);
+        }
+        li[1].getElementsByTagName("a")[0].innerHTML = "";
+        li[2].getElementsByTagName("a")[0].innerHTML = "";
+    }
+
+    if(query == "") {
+        li[0].getElementsByTagName("a")[0].innerHTML = "";
+        li[1].getElementsByTagName("a")[0].innerHTML = "";
+        li[2].getElementsByTagName("a")[0].innerHTML = "";
     }
 })
